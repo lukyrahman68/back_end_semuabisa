@@ -17,3 +17,9 @@ Route::get('/', function () {
 Route::get('/admin/home', function () {
     return view('backend.index');
 });
+Route::get('/page/home', function () {
+    return view('layouts.app_frontend');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

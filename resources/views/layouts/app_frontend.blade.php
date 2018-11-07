@@ -58,17 +58,11 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown submenu 
+                                <li class="
                                 @if($data=='home')
                                     active
                                 @endif
-                                ">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="index.html">Home 01</a></li>
-                                        <li><a href="index-2.html">Home 02</a></li>
-                                    </ul>
-                                </li>
+                                "><a href="home">Home</a></li>
                                 <li class="
                                 @if($data=='project')
                                     active

@@ -18,7 +18,8 @@ Route::get('/admin/home', function () {
     return view('backend.index');
 });
 Route::get('/page/home', function () {
-    return view('frontend.index');
+    $data="home";
+    return view('frontend.index',compact('data'));
 });
 Route::get('/page/project', function () {
     $data="project";

@@ -20,6 +20,9 @@ Route::get('/admin/home', function () {
 Route::get('/page/home', function () {
     return view('frontend.index');
 });
+Route::get('/page/project', function () {
+    return view('frontend.project');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

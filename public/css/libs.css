@@ -16134,7 +16134,7 @@ iframe {
 		max-height: 270px;
 	}
 	.main_menu_area .navbar.navbar-default .navbar-header .navbar-brand img {
-		width: 70%;
+		/* width: 70%; */
 	}
 	.our_service_area .left_service .left_service_inner .service_item {
 		width: 100%;

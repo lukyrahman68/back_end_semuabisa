@@ -65,7 +65,8 @@
                                         <li><a href="index-2.html">Home 02</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown submenu">
+                                <li><a href="project">Project</a></li>
+                                {{-- <li class="dropdown submenu">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
                                     <ul class="dropdown-menu">
                                         <li><a href="project-full-width.html">Project Full Width</a></li>
@@ -74,7 +75,7 @@
                                         <li><a href="project-three-column.html">Project Grid 03</a></li>
                                         <li><a href="project-single.html">Single Project</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li><a href="service-single.html">Services</a></li>
                                 <li><a href="#">about us</a></li>
                                 <li><a href="blog-details.html">blog</a></li>

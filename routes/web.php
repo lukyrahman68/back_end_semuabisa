@@ -21,7 +21,8 @@ Route::get('/page/home', function () {
     return view('frontend.index');
 });
 Route::get('/page/project', function () {
-    return view('frontend.project');
+    $data="project";
+    return view('frontend.project',compact('data'));
 });
 Auth::routes();
 

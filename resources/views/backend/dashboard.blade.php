@@ -63,7 +63,6 @@
         </div>
         <!-- ./col -->
       </div>
-<section class="col-lg-7 connectedSortable">
           <!-- Custom tabs (Charts with tabs)-->
           <div class="nav-tabs-custom">
             <!-- Tabs within a box -->
@@ -77,6 +76,5 @@
             </div>
           </div>
           <!-- /.nav-tabs-custom -->
-        </section>
     
     @endsection

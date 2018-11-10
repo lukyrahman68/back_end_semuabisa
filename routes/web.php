@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('/admin/home', function () {
     return view('backend.dashboard');
 });
-Route::resource('project','ProjectController');
+Route::resource('tambahproject','ProjectController');
 Auth::routes();
 
 //-----------------/backend---------------------

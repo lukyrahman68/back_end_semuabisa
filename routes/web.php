@@ -10,13 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//-----------------backend---------------------
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/admin/home', function () {
     return view('backend.dashboard');
 });
+Route::resource('project','ProjectController');
+Auth::routes();
+
+//-----------------/backend---------------------
+
+//-----------------frontend---------------------
 Route::get('/page/home', function () {
     $data="home";
     return view('frontend.index',compact('data'));
@@ -25,6 +31,7 @@ Route::get('/page/project', function () {
     $data="project";
     return view('frontend.project',compact('data'));
 });
-Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');
+//-----------------/frontend---------------------

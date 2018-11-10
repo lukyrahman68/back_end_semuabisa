@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/admin/home', function () {
-    return view('backend.index');
+    return view('backend.dashboard');
 });
 Route::get('/page/home', function () {
     $data="home";

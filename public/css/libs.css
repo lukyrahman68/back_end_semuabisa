@@ -6594,7 +6594,7 @@ opacity:1
     font-size:13px;
     font-weight:700;
     text-transform:uppercase;
-    font-family:"Roboto Slab"
+    font-family:"Roboto Slab";
     margin-bottom:5px;
 }
 
@@ -7255,7 +7255,7 @@ border-radius:6px;
     font-size:13px;
     font-weight:700;
     text-transform:uppercase;
-    font-family:"Roboto Slab"
+    font-family:"Roboto Slab";
     margin-bottom:5px;
 }
 
@@ -8008,8 +8008,8 @@ website:    http://www.themepunch.com
 
 
 /* BULLETS */
-.persephone.tp-bullets {
-}
+/* .persephone.tp-bullets {
+} */
 .persephone.tp-bullets:before {
 	content:" ";
 	position:absolute;

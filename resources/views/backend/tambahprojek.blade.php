@@ -15,23 +15,39 @@
                   <!-- /. tools -->
                 </div>
                 <div class="box-body">
-                  <form action="#" method="post">
+                @if (session('sukses'))
+                  <div class="alert alert-success">
+                      {{ session('sukses') }}
+                  </div>
+              @endif
+
+              @if (session('gagal'))
+                  <div class="alert alert-danger">
+                      {{ session('gagal') }}
+                  </div>
+              @endif
+                  <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="form-group">
-                      <input type="email" class="form-control" name="emailto" placeholder="Email to:">
+                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar" >
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject">
+                      <input type="text" class="form-control" name="judul" placeholder="Judul">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="kategori" placeholder="Kategori">
                     </div>
                     <div>
-                      <textarea class="textarea" placeholder="Message"
+                      <textarea class="textarea" placeholder="Deskripsi" name="deskripsi"
                                 style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                     </div>
-                  </form>
-                </div>
-                <div class="box-footer clearfix">
-                  <button type="button" class="pull-right btn btn-default" id="sendEmail">Send
+                    <div class="box-footer clearfix">
+                  <button type="submit" class="pull-right btn btn-default" id="sendEmail">Simpan
                     <i class="fa fa-arrow-circle-right"></i></button>
                 </div>
+                  </form>
+                </div>
+                
               </div>
     
     @endsection

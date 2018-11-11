@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Project;
+use App\Projek;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = project::latest()->paginate(5);
+        $projects = projek::latest()->paginate(5);
   
-        return view('projects.index',compact('projects'))
+        return view('backend.tambahprojek',compact('projects'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
    
@@ -33,15 +33,29 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'detail' => 'required',
-        ]);
-  
-        project::create($request->all());
-   
-        return redirect()->route('projects.index')
-                        ->with('success','project created successfully.');
+        try{
+            $image = $request->file('gambar');
+            $namaImg = $image->getClientOriginalName();
+            $ext = $image->guessClientExtension();
+            $img = $namaImg.'.'.$ext;
+    		$project = new projek();
+	    	$project->nama = $request->get('judul');
+            $project->deskripsi = $request->get('deskripsi');
+            $project->kategori = $request->get('kategori');
+            //$project->img = $img;
+	    	
+	    	$project->created_at = now();
+	    	$project->updated_at = now();
+	    	$project->save();
+
+	        $image->move(public_path('project'),$img);
+
+			return redirect()->route('project.index')->with('sukses','projek berhasil ditambahkan');
+    	}
+    	catch(\Exception $e){
+    		$msg=$e->getMessage();
+    		return redirect()->route('project.index')->with('gagal','projek gagal ditambahkan');
+    	}
     }
    
     /**

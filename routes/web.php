@@ -15,7 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/admin/home', function () {
-    return view('backend.dashboard');
+    $data = array(
+        'hal' => 'dashboard',
+        'sub' => '');
+    return view('backend.dashboard')->with($data);
 });
 Route::resource('admin/project','ProjectController');
 Auth::routes();

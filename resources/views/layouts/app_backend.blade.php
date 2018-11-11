@@ -334,8 +334,10 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
-            <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
-            <li class="active treeview">
+            <li><a href="{{route('project.index')}}"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
+            <li class="@if ($hal == "project")
+            active
+            @endif treeview">
               <a href="#">
                 <i class="fa fa-dashboard"></i> <span>Project</span>
                 <span class="pull-right-container">
@@ -343,11 +345,17 @@
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li class="active"><a href="{{url('admin/project')}}"><i class="fa fa-circle-o"></i> Tambah project</a></li>
-                <li class="active"><a href="{{url('admin/project')}}"><i class="fa fa-circle-o"></i> Edit project</a></li>
+                <li @if (($hal == "project")and($sub == "lihat"))
+            class="active"
+            @endif><a href="{{url('admin/project')}}"><i class="fa fa-circle-o"></i> Lihat project</a></li>
+                <li @if (($hal == "lukisan")and($sub == "tambah"))
+            class="active"
+            @endif><a href="{{url('admin/project.create')}}"><i class="fa fa-circle-o"></i> Tambah project</a></li>
               </ul>
             </li>
-            <li class="active treeview">
+            <li class="@if ($hal == "artikel")
+            active
+            @endif treeview">
               <a href="#">
                 <i class="fa fa-dashboard"></i> <span>Artikel</span>
                 <span class="pull-right-container">
@@ -355,8 +363,12 @@
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li class="active"><a href="{{url('admin/artikel')}}"><i class="fa fa-circle-o"></i> Tambah artikel</a></li>
-                <li class="active"><a href="{{url('admin/artikel')}}"><i class="fa fa-circle-o"></i> Edit artikel</a></li>
+                <li @if (($hal == "artikel")and($sub == "lihat"))
+            class="active"
+            @endif><a href="{{url('admin/artikel')}}"><i class="fa fa-circle-o"></i> Lihat artikel</a></li>
+                <li @if (($hal == "artikel")and($sub == "tambah"))
+            class="active"
+            @endif><a href="{{url('admin/artikel')}}"><i class="fa fa-circle-o"></i> Tambah artikel</a></li>
               </ul>
             </li>
             </ul>

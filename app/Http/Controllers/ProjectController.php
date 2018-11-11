@@ -10,9 +10,11 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = projek::latest()->paginate(5);
-  
+        $data = array(
+            'hal' => 'project',
+            'sub' => 'lihatproject');
         return view('backend.tambahprojek',compact('projects'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i', (request()->input('page', 1) - 1) * 5)->with($data);
     }
    
     /**
@@ -22,7 +24,10 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        return view('projects.create');
+        $data = array(
+            'hal' => 'project',
+            'sub' => 'tambah');
+        return view('projects.create')->with($data);
     }
   
     /**
@@ -66,7 +71,10 @@ class ProjectController extends Controller
      */
     public function show(project $project)
     {
-        return view('projects.show',compact('project'));
+        $data = array(
+            'hal' => 'project',
+            'sub' => 'lihat');
+        return view('projects.show',compact('project'))->with($data);
     }
    
     /**

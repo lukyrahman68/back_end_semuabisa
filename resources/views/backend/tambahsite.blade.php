@@ -13,37 +13,18 @@
           </div>
           <!-- /. tools -->
         </div>
-        <div class="box-body">
-        @if (session('sukses'))
-          <div class="alert alert-success">
-              {{ session('sukses') }}
-          </div>
-      @endif
-
-      @if (session('gagal'))
-          <div class="alert alert-danger">
-              {{ session('gagal') }}
-          </div>
-      @endif
-      
-          <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="form-group">
-                <label>Nama Site</label>
-              <input type="text" class="form-control" name="judul" placeholder="Judul">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="kategori" placeholder="Kategori">
-            </div>
-            <div>
-              <textarea class="textarea" placeholder="Deskripsi" name="deskripsi"
-                        style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-            </div>
-            <div class="box-footer clearfix">
-          <button type="submit" class="pull-right btn btn-default" id="sendEmail">Simpan
-            <i class="fa fa-arrow-circle-right"></i></button>
+        <div class="container-fluid">
+      {!! Form::open(['method'=>'post', 'action'=>'SiteController@store','files'=>'true']) !!}
+        <div class="form-group">
+            {!! Form::label('nama','Nama Site') !!}
+            {!! Form::text('nama',null,['class'=>'form-control','placeholder'=>'Nama Barang'])!!}
         </div>
+        <div class="form-group">
+                {!! Form::submit('Simpan',['class'=>'btn btn-danger'])!!}
+            </div> 
+        {!! Form::close() !!}
           </form>
+        </div>
         </div>
         
       </div>

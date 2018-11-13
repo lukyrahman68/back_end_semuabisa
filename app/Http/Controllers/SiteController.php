@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Site;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -37,7 +37,9 @@ class SiteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Site::create($input);
+        return redirect()->route('site.create')->with('sukses','site berhasil ditambahkan');
     }
 
     /**

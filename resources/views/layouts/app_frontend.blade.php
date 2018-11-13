@@ -80,7 +80,7 @@
                                 </li> --}}
                                 <li><a href="service-single.html">Services</a></li>
                                 <li><a href="#">about us</a></li>
-                                <li><a href="blog-details.html">blog</a></li>
+                                <li><a href="blog">blog</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->

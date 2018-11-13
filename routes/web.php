@@ -28,11 +28,15 @@ Auth::routes();
 //-----------------frontend---------------------
 Route::get('/page/home', function () {
     $data="home";
-    return view('frontend.index',compact('data'));
+    return view('frontend.dashboard',compact('data'));
 });
 Route::get('/page/project', function () {
     $data="project";
     return view('frontend.project',compact('data'));
+});
+Route::get('/page/blog', function () {
+    $data="project";
+    return view('frontend.blog',compact('data'));
 });
 
 

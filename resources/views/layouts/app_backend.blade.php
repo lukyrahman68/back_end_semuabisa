@@ -371,6 +371,24 @@
             @endif><a href="{{url('admin/artikel')}}"><i class="fa fa-circle-o"></i> Tambah artikel</a></li>
               </ul>
             </li>
+            <li class="@if ($hal == "site")
+            active
+            @endif treeview">
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>Site</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li @if (($hal == "site")and($sub == "lihat"))
+            class="active"
+            @endif><a href="{{url('admin/site')}}"><i class="fa fa-circle-o"></i> Lihat Site</a></li>
+                <li @if (($hal == "site")and($sub == "tambah"))
+            class="active"
+            @endif><a href="{{route('site.create')}}"><i class="fa fa-circle-o"></i> Tambah site</a></li>
+              </ul>
+            </li>
             </ul>
         </section>
         <!-- /.sidebar -->

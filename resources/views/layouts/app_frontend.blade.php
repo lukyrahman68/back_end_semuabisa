@@ -9,7 +9,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Construction - WeBuilder Template</title>
 
-        <link rel="stylesheet" href="{{asset('css/app.css')}}"> 
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/libs.css')}}">
         <link rel="stylesheet" href="{{asset('css/costume.css')}}">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -79,8 +79,11 @@
                                     </ul>
                                 </li> --}}
                                 <li><a href="service-single.html">Services</a></li>
-                                <li><a href="#">about us</a></li>
-                                <li><a href="blog">blog</a></li>
+                                <li><a href="about">about us</a></li>
+                                <li class="
+                                @if($data=='blog')
+                                    active
+                                @endif "><a href="blog">blog</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->

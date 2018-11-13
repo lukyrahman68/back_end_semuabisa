@@ -35,8 +35,12 @@ Route::get('/page/project', function () {
     return view('frontend.project',compact('data'));
 });
 Route::get('/page/blog', function () {
-    $data="project";
+    $data="blog";
     return view('frontend.blog',compact('data'));
+});
+Route::get('/page/about', function () {
+    $data="about";
+    return view('frontend.about_us',compact('data'));
 });
 
 

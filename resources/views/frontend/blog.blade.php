@@ -28,7 +28,7 @@
                         data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]"
                         data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]"><span>FULL PROJECT</span></div>
+                        data-paddingleft="[0,0,0,0]"><span>BLOG</span></div>
 
 
                     </div>
@@ -237,7 +237,24 @@
                                 <br>
                                 <div class="pull-left">
                                     <input type="button" value="Balas" class="btn btn-primary btn-sm">
-                                </div>
+                                </div><br><br>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <img src="{{asset('img/blog/lates_post.png')}}" alt="" srcset="" style="max-width:100%;">
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                        <label for="commentName">Rendy Destara</label>
+                                        <small>May 22, 2017 AT 5:48 AM</small><br>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi omnis modi voluptatem perferendis
+                                            quo! Vero, excepturi fugiat delectus quibusdam aut ratione optio beatae est id dignissimos quae perferendis dolorem doloribus.
+                                        </p>
+                                        <br>
+                                        <div class="pull-left">
+                                            <input type="button" value="Balas" class="btn btn-primary btn-sm">
+                                        </div><br><br>
+                                    </div>
+                                </div><br>
                             </div>
                         </div><br>
                     </div>

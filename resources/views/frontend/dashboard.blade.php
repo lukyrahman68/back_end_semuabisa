@@ -412,9 +412,9 @@
     </section>
     <!--================End Work Area =================-->
     <!--================Counter Area =================-->
-    <section class="counter_area">
+    <section>
         <div class="container">
-           
+           <img src="{{asset('img/Instruksi.png')}}" alt="" style="max-width: 100%">
         </div>
     </section>
     <!--================End Counter Area =================-->

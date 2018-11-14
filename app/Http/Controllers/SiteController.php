@@ -14,7 +14,11 @@ class SiteController extends Controller
      */
     public function index()
     {
-
+        $data = array(
+            'hal' => 'site',
+            'sub' => 'lihat');
+        $sites=Site::all();
+        return view('backend.site', compact('sites'))->with($data);
     }
 
     /**
@@ -25,7 +29,7 @@ class SiteController extends Controller
     public function create()
     {
         $data = array(
-            'hal' => 'project',
+            'hal' => 'site',
             'sub' => 'tambah');
         return view('backend.tambahsite')->with($data);
     }
@@ -43,11 +47,11 @@ class SiteController extends Controller
             $input = $request->all();
             Site::create($input);
             Session::flash('create_post_success','Site Berhasil Ditambahkan');
-            return redirect()->route('site.create');
+            return redirect()->route('site.index');
           }
           catch (\Exception $e) {
             Session::flash('create_post_fail','Site gagal Ditambahkan');
-            return redirect()->route('site.create');
+            return redirect()->route('site.index');
           }
 
 
@@ -72,7 +76,12 @@ class SiteController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = array(
+            'hal' => 'site',
+            'sub' => 'tambah');
+        $edit=true;
+        $sites=Site::findOrFail($id);
+        return view ('backend.tambahsite', compact('sites','edit'))->with($data);
     }
 
     /**
@@ -84,7 +93,15 @@ class SiteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = array(
+            'hal' => 'site',
+            'sub' => 'tambah');
+        $input = $request->all();
+        $sites=Site::all();
+        $ubah=Site::FindOrFail($id);
+        $ubah->update($input);
+        return view('backend.site', compact('sites'))->with($data);
+        
     }
 
     /**

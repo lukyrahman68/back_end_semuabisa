@@ -1,16 +1,34 @@
 
  @extends('layouts.app_backend')
  @section('content')
-    @if (Session::has('create_post_success'))
+    @if($edit=true)
+    <div class="box box-info">
+        <div class="box-header">
+          <i class="fa fa-envelope"></i>
 
-    <div class="alert alert-success">{{ Session('create_post_success') }}</div>
+          <h3 class="box-title">Ubah Site</h3>
+          <!-- tools box -->
+          <div class="pull-right box-tools">
 
-    @elseif (Session::has('create_post_fail'))
+          </div>
+          <!-- /. tools -->
+        </div>
+        <div class="container-fluid">
+      {!! Form::model($sites,['method'=>'PUT', 'action'=>['SiteController@update',$sites->id],'files'=>'true']) !!}
+        <div class="form-group">
+            {!! Form::label('nama','Nama Site') !!}
+            {!! Form::text('nama',null,['class'=>'form-control','placeholder'=>'Nama Site'])!!}
+        </div>
+        <div class="form-group">
+                {!! Form::submit('Simpan',['class'=>'btn btn-primary'])!!}
+            </div>
+        {!! Form::close() !!}
+          </form>
+        </div>
+        </div>
+      </div>
 
-    <div class="alert alert-danger">{{ Session('create_post_fail') }}</div>
-
-    @endif
-
+    @else
     <div class="box box-info">
         <div class="box-header">
           <i class="fa fa-envelope"></i>
@@ -26,16 +44,20 @@
       {!! Form::open(['method'=>'post', 'action'=>'SiteController@store','files'=>'true']) !!}
         <div class="form-group">
             {!! Form::label('nama','Nama Site') !!}
-            {!! Form::text('nama',null,['class'=>'form-control','placeholder'=>'Nama Barang'])!!}
+            {!! Form::text('nama',null,['class'=>'form-control','placeholder'=>'Nama Site'])!!}
         </div>
         <div class="form-group">
-                {!! Form::submit('Simpan',['class'=>'btn btn-danger'])!!}
+                {!! Form::submit('Simpan',['class'=>'btn btn-primary'])!!}
             </div>
         {!! Form::close() !!}
           </form>
         </div>
         </div>
-
       </div>
+
+
+    @endif
+    
+      
 
 @endsection

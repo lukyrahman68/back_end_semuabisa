@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Site;
 use Illuminate\Http\Request;
+use Illuminate\Support\facades\Session;
 
 class SiteController extends Controller
 {
@@ -13,7 +14,7 @@ class SiteController extends Controller
      */
     public function index()
     {
-        
+
     }
 
     /**
@@ -37,9 +38,19 @@ class SiteController extends Controller
      */
     public function store(Request $request)
     {
-        $input = $request->all();
-        Site::create($input);
-        return redirect()->route('site.create')->with('sukses','site berhasil ditambahkan');
+
+        try {
+            $input = $request->all();
+            Site::create($input);
+            Session::flash('create_post_success','Site Berhasil Ditambahkan');
+            return redirect()->route('site.create');
+          }
+          catch (\Exception $e) {
+            Session::flash('create_post_fail','Site gagal Ditambahkan');
+            return redirect()->route('site.create');
+          }
+
+
     }
 
     /**

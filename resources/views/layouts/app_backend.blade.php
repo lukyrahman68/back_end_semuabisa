@@ -350,7 +350,7 @@
             @endif><a href="{{url('admin/project')}}"><i class="fa fa-circle-o"></i> Lihat project</a></li>
                 <li @if (($hal == "lukisan")and($sub == "tambah"))
             class="active"
-            @endif><a href="{{url('admin/project.create')}}"><i class="fa fa-circle-o"></i> Tambah project</a></li>
+            @endif><a href="{{route('project.create')}}"><i class="fa fa-circle-o"></i> Tambah project</a></li>
               </ul>
             </li>
             <li class="@if ($hal == "artikel")

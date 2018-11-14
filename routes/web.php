@@ -23,7 +23,7 @@ Route::get('/admin/home', function () {
 Route::resource('admin/project','ProjectController');
 Auth::routes();
 Route::resource('admin/site','SiteController');
-Auth::routes();
+//Auth::routes();
 
 //-----------------/backend---------------------
 

@@ -9,12 +9,11 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = projek::latest()->paginate(5);
+        $projek = projek::all();
         $data = array(
             'hal' => 'project',
             'sub' => 'lihatproject');
-        return view('backend.tambahprojek',compact('projects'))
-            ->with('i', (request()->input('page', 1) - 1) * 5)->with($data);
+        return view('backend.lihatprojek',compact('projek'))->with($data);
     }
    
     /**
@@ -27,7 +26,7 @@ class ProjectController extends Controller
         $data = array(
             'hal' => 'project',
             'sub' => 'tambah');
-        return view('projects.create')->with($data);
+        return view('backend.tambahprojek')->with($data);
     }
   
     /**
@@ -69,12 +68,13 @@ class ProjectController extends Controller
      * @param  \App\project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(project $project)
+    public function show(projek $project)
     {
         $data = array(
             'hal' => 'project',
-            'sub' => 'lihat');
-        return view('projects.show',compact('project'))->with($data);
+            'sub' => 'lihat',
+            'projek' => $project);
+        return view('backend.detailprojek',compact('project'))->with($data);
     }
    
     /**
@@ -83,9 +83,13 @@ class ProjectController extends Controller
      * @param  \App\project  $project
      * @return \Illuminate\Http\Response
      */
-    public function edit(project $project)
+    public function edit(projek $project)
     {
-        return view('projects.edit',compact('project'));
+        $data = array(
+            'hal' => 'project',
+              'sub' => 'edit',
+              'projek' => $project);
+        return view('backend.editprojek')->with($data);
     }
   
     /**
@@ -95,16 +99,22 @@ class ProjectController extends Controller
      * @param  \App\project  $project
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, project $project)
+    public function update(Request $request, $id)
     {
         $request->validate([
-            'name' => 'required',
-            'detail' => 'required',
+            'judul' => 'required',
+            'kategori' => 'required',
+            'deskripsi' => 'required',
         ]);
   
-        $project->update($request->all());
-  
-        return redirect()->route('projects.index')
+        $project = projek::find($id);
+	    $project->nama = $request->get('judul');
+        $project->kategori = $request->get('kategori');
+        $project->deskripsi = $request->get('deskripsi');
+
+      	$project->save();
+        
+        return redirect()->route('project.edit')
                         ->with('success','project updated successfully');
     }
   
@@ -114,11 +124,11 @@ class ProjectController extends Controller
      * @param  \App\project  $project
      * @return \Illuminate\Http\Response
      */
-    public function destroy(project $project)
+    public function destroy(projek $project)
     {
         $project->delete();
   
-        return redirect()->route('projects.index')
+        return redirect()->route('backend.lihatprojek')
                         ->with('success','project deleted successfully');
     }
 }

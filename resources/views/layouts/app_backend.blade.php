@@ -371,7 +371,7 @@
             @endif><a href="{{url('admin/artikel')}}"><i class="fa fa-circle-o"></i> Lihat artikel</a></li>
                 <li @if (($hal == "artikel")and($sub == "tambah"))
             class="active"
-            @endif><a href="{{url('admin/artikel')}}"><i class="fa fa-circle-o"></i> Tambah artikel</a></li>
+            @endif><a href="{{route('artikel.create')}}"><i class="fa fa-circle-o"></i> Tambah artikel</a></li>
               </ul>
             </li>
             <li class="@if ($hal == "site")

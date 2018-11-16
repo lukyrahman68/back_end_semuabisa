@@ -26,28 +26,19 @@
                       {{ session('gagal') }}
                   </div>
               @endif
-                  <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
+                  
                     <div class="form-group">
-                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar" multiple>
+                    <strong>Judul:</strong>
+                        {{ $projek->nama }}
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" name="judul" placeholder="Judul">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="kategori" placeholder="Kategori">
+                    <strong>Kategori:</strong>
+                        {{ $projek->kategori }}
                     </div>
                     <div>
-                      <textarea class="textarea" placeholder="Deskripsi" name="deskripsi"
-                                style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                    <strong>Deskripsi:</strong>
+                        {{$projek->deskripsi}}   
                     </div>
                     <div class="box-footer clearfix">
-                  <button type="submit" class="pull-right btn btn-default" id="sendEmail">Simpan
-                    <i class="fa fa-arrow-circle-right"></i></button>
-                </div>
-                  </form>
-                </div>
-                
               </div>
-    
     @endsection

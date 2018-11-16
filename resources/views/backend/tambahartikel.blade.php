@@ -26,7 +26,7 @@
                       {{ session('gagal') }}
                   </div>
               @endif
-                  <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
+                  <form action="{{ route('artikel.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                       <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar" multiple>

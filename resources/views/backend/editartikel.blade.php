@@ -26,20 +26,23 @@
                       {{ session('gagal') }}
                   </div>
               @endif
-                  <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
+                  <form action="{{ route('artikel.update',$artikel->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @method('PUT')
                     <div class="form-group">
-                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar" multiple>
+                      <!--<input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">-->
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" name="judul" placeholder="Judul">
+                      <input type="text" class="form-control" name="judul" placeholder="Judul" value="{{$artikel->nama}}">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" name="kategori" placeholder="Kategori">
+                      <input type="text" class="form-control" name="kategori" placeholder="Kategori" value="{{$artikel->kategori}}">
                     </div>
                     <div>
-                      <textarea class="textarea" placeholder="Deskripsi" name="deskripsi"
-                                style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                      <textarea class="textarea" placeholder="Deskripsi" name="deskripsi" 
+                                style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                                {{$artikel->deskripsi}}
+                                </textarea>
                     </div>
                     <div class="box-footer clearfix">
                   <button type="submit" class="pull-right btn btn-default" id="sendEmail">Simpan

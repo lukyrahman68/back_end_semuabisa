@@ -21,6 +21,7 @@ Route::get('/admin/home', function () {
     return view('backend.dashboard')->with($data);
 });
 Route::resource('admin/project','ProjectController');
+Route::resource('admin/artikel','artikelController');
 Auth::routes();
 Route::resource('admin/site','SiteController');
 //Auth::routes();

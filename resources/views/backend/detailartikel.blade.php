@@ -29,15 +29,15 @@
                   
                     <div class="form-group">
                     <strong>Judul:</strong>
-                        {{ $projek->nama }}
+                        {{ $artikel->nama }}
                     </div>
                     <div class="form-group">
                     <strong>Kategori:</strong>
-                        {{ $projek->kategori }}
+                        {{ $artikel->kategori }}
                     </div>
                     <div>
                     <strong>Deskripsi:</strong>
-                        {{$projek->deskripsi}}   
+                        {{$artikel->deskripsi}}   
                     </div>
                     <div class="box-footer clearfix">
               </div>

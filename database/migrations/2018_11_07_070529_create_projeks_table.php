@@ -18,6 +18,7 @@ class CreateProjeksTable extends Migration
             $table->String('nama');
             $table->String('deskripsi');
             $table->String('kategori');
+            $table->integer('dibaca');
             $table->timestamps();
         });
     }

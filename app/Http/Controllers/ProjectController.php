@@ -12,7 +12,7 @@ class ProjectController extends Controller
         $projek = projek::all();
         $data = array(
             'hal' => 'project',
-            'sub' => 'lihatproject');
+            'sub' => 'lihat');
         return view('backend.lihatprojek',compact('projek'))->with($data);
     }
    
@@ -38,22 +38,23 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         try{
-            $image = $request->file('gambar');
-            $namaImg = $image->getClientOriginalName();
-            $ext = $image->guessClientExtension();
-            $img = $namaImg.'.'.$ext;
     		$project = new projek();
 	    	$project->nama = $request->get('judul');
             $project->deskripsi = $request->get('deskripsi');
             $project->kategori = $request->get('kategori');
             //$project->img = $img;
-	    	
+	    	$project->dibaca = "0";
 	    	$project->created_at = now();
 	    	$project->updated_at = now();
 	    	$project->save();
 
-	        $image->move(public_path('project'),$img);
-
+	        if ($request->has('gambar')) {
+                $image = $request->file('gambar');
+                $ext = $image->guessClientExtension();
+                $img = $project->id.'.'.$ext;
+                $image->move(public_path('project'),$img);
+            }
+            
 			return redirect()->route('project.index')->with('sukses','projek berhasil ditambahkan');
     	}
     	catch(\Exception $e){

@@ -8,6 +8,7 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="{{asset('css_back/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{asset('css_back/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('css_back/bower_components/font-awesome/css/font-awesome.min.css')}}">
   <!-- Ionicons -->
@@ -334,7 +335,9 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
-            <li><a href="{{url('/admin/home')}}"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
+            <li @if ($hal == "dashboard")
+            class="active"
+            @endif><a href="{{url('/admin/home')}}"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
             <li class="@if ($hal == "project")
             active
             @endif treeview">
@@ -348,7 +351,7 @@
                 <li @if (($hal == "project")and($sub == "lihat"))
             class="active"
             @endif><a href="{{url('admin/project')}}"><i class="fa fa-circle-o"></i> Lihat project</a></li>
-                <li @if (($hal == "lukisan")and($sub == "tambah"))
+                <li @if (($hal == "project")and($sub == "tambah"))
             class="active"
             @endif><a href="{{route('project.create')}}"><i class="fa fa-circle-o"></i> Tambah project</a></li>
               </ul>
@@ -661,5 +664,25 @@
 <script src="{{asset('css_back/dist/js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('css_back/dist/js/demo.js')}}"></script>
+<script src="{{asset('css_back/bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{asset('css_back/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
+<!-- SlimScroll -->
+<script src="{{asset('css_back/bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+<!-- FastClick -->
+<script src="{{asset('css_back/bower_components/fastclick/lib/fastclick.js') }}"></script>
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
 </body>
 </html>

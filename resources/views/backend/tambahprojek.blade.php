@@ -7,7 +7,7 @@
                 <div class="box-header">
                   <i class="fa fa-envelope"></i>
     
-                  <h3 class="box-title">Quick Email</h3>
+                  <h3 class="box-title">Tambah project</h3>
                   <!-- tools box -->
                   <div class="pull-right box-tools">
                     
@@ -28,9 +28,12 @@
               @endif
                   <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <div class="form-group">
-                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar" multiple>
+                    <div id="media">
+                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">
+                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">
                     </div>
+                    <button type="button" class="btn btn-default" onclick=tambahmedia()>+
+                    </button>
                     <div class="form-group">
                       <input type="text" class="form-control" name="judul" placeholder="Judul">
                     </div>
@@ -49,5 +52,11 @@
                 </div>
                 
               </div>
-    
+    <script>
+    function tambahmedia(){
+    //document.getElementById("media").append('<input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">');
+      document.getElementById("media").innerHTML += "<input type='file' class='form-control file-input' name='gambar' placeholder='Masukkan gambar'>";
+
+    }
+    </script>
     @endsection

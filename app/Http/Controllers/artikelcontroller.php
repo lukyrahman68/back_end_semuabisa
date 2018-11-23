@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\artikel;
 use Illuminate\Http\Request;
-//use Auth;
+use Auth;
 class artikelController extends Controller
 {
     public function index()

@@ -39,7 +39,7 @@ class ProjectController extends Controller
     {
         try{
     		$project = new projek();
-	    	$project->nama = $request->get('judul');
+	    	$project->judul = $request->get('judul');
             $project->deskripsi = $request->get('deskripsi');
             $project->kategori = $request->get('kategori');
             //$project->img = $img;

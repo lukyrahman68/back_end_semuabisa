@@ -1,26 +1,21 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Site;
-use Illuminate\Http\Request;
-use Illuminate\Support\facades\Session;
 
-class SiteController extends Controller
+use App\site;
+use Illuminate\Http\Request;
+
+class siteController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
+        $site = site::all();
         $data = array(
             'hal' => 'site',
             'sub' => 'lihat');
-        $sites=Site::all();
-        return view('backend.site', compact('sites'))->with($data);
+        return view('backend.lihatsite',compact('site'))->with($data);
     }
-
+   
     /**
      * Show the form for creating a new resource.
      *
@@ -33,7 +28,7 @@ class SiteController extends Controller
             'sub' => 'tambah');
         return view('backend.tambahsite')->with($data);
     }
-
+  
     /**
      * Store a newly created resource in storage.
      *
@@ -42,76 +37,93 @@ class SiteController extends Controller
      */
     public function store(Request $request)
     {
-
-        try {
-            $input = $request->all();
-            Site::create($input);
-            Session::flash('create_post_success','Site Berhasil Ditambahkan');
-            return redirect()->route('site.index');
-          }
-          catch (\Exception $e) {
-            Session::flash('create_post_fail','Site gagal Ditambahkan');
-            return redirect()->route('site.index');
-          }
-
-
+        try{
+    		$site = new site();
+	    	$site->page = $request->get('page');
+            $site->deskripsi1 = $request->get('deskripsi1');
+            $site->deskripsi2 = $request->get('deskripsi2');
+            $site->deskripsi3 = $request->get('deskripsi3');
+            $site->metadatadescription = $request->get('metadatadescription');
+            $site->metadatakeywords = $request->get('metadatakeywords');
+	    	$site->created_at = now();
+	    	$site->updated_at = now();
+	    	$site->save();
+            
+			return redirect()->route('site.index')->with('sukses','site berhasil ditambahkan');
+    	}
+    	catch(\Exception $e){
+    		$msg=$e->getMessage();
+    		return redirect()->route('site.index')->with('gagal','site gagal ditambahkan');
+    	}
     }
-
+   
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\site  $site
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+    public function show(site $site)
     {
         $data = array(
             'hal' => 'site',
-            'sub' => 'tambah');
-        $edit=true;
-        $sites=Site::findOrFail($id);
-        return view ('backend.tambahsite', compact('sites','edit'))->with($data);
+            'sub' => 'lihat',
+            'site' => $site);
+        return view('backend.detailsite',compact('site'))->with($data);
     }
-
+   
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\site  $site
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(site $site)
+    {
+        $data = array(
+            'hal' => 'site',
+              'sub' => 'edit',
+              'site' => $site);
+        return view('backend.editsite')->with($data);
+    }
+  
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\site  $site
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $data = array(
-            'hal' => 'site',
-            'sub' => 'tambah');
-        $input = $request->all();
-        $sites=Site::all();
-        $ubah=Site::FindOrFail($id);
-        $ubah->update($input);
-        return view('backend.site', compact('sites'))->with($data);
-        
-    }
+        $request->validate([
+            'judul' => 'required',
+            'kategori' => 'required',
+            'deskripsi' => 'required',
+        ]);
+  
+        $site = site::find($id);
+	    $site->nama = $request->get('judul');
+        $site->kategori = $request->get('kategori');
+        $site->deskripsi = $request->get('deskripsi');
 
+      	$site->save();
+        
+        return redirect()->route('site.edit')
+                        ->with('success','site updated successfully');
+    }
+  
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\site  $site
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(site $site)
     {
-        //
+        $site->delete();
+  
+        return redirect()->route('backend.lihatsite')
+                        ->with('success','site deleted successfully');
     }
 }

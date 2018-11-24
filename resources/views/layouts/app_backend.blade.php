@@ -402,6 +402,42 @@
             @endif><a href="{{route('site.create')}}"><i class="fa fa-circle-o"></i> Tambah site</a></li>
               </ul>
             </li>
+            <li class="@if ($hal == "pricelist")
+            active
+            @endif treeview">
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>Pricelist</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li @if (($hal == "pricelist")and($sub == "lihat"))
+            class="active"
+            @endif><a href="{{url('admin/pricelist')}}"><i class="fa fa-circle-o"></i> Lihat PL</a></li>
+                <li @if (($hal == "pricelist")and($sub == "tambah"))
+            class="active"
+            @endif><a href="{{route('pricelist.create')}}"><i class="fa fa-circle-o"></i> Tambah PL</a></li>
+              </ul>
+            </li>
+            <li class="@if ($hal == "testimoni")
+            active
+            @endif treeview">
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>Testimoni</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li @if (($hal == "testimoni")and($sub == "lihat"))
+            class="active"
+            @endif><a href="{{url('admin/testimoni')}}"><i class="fa fa-circle-o"></i> Lihat Testimoni</a></li>
+                <li @if (($hal == "testimoni")and($sub == "tambah"))
+            class="active"
+            @endif><a href="{{route('testimoni.create')}}"><i class="fa fa-circle-o"></i> Tambah testimoni</a></li>
+              </ul>
+            </li>
             </ul>
         </section>
         <!-- /.sidebar -->

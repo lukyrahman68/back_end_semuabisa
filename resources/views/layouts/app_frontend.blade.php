@@ -12,6 +12,44 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/libs.css')}}">
         <link rel="stylesheet" href="{{asset('css/costume.css')}}">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <style>
+            /* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+    height:20%;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+        </style>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -68,22 +106,17 @@
                                     active
                                 @endif
                                 "><a href="project">Project</a></li>
-                                {{-- <li class="dropdown submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="project-full-width.html">Project Full Width</a></li>
-                                        <li><a href="project-grid-three-column.html">Project Grid 01</a></li>
-                                        <li><a href="project-grid-two-column.html">Project Grid 02</a></li>
-                                        <li><a href="project-three-column.html">Project Grid 03</a></li>
-                                        <li><a href="project-single.html">Single Project</a></li>
-                                    </ul>
-                                </li> --}}
-                                <li><a href="service-single.html">Services</a></li>
+                                <li class="
+                                @if($data=='services')
+                                    active
+                                @endif
+                                "><a href="services">Services</a></li>
                                 <li><a href="about">about us</a></li>
                                 <li class="
                                 @if($data=='blog')
                                     active
                                 @endif "><a href="blog">blog</a></li>
+                                <li><a href="detail_projek">Detail_project(tes)</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -233,6 +266,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="{{asset('js/libs.js')}}"></script>
         <!--gmaps Js-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-
+        <script>
+        $('.carousel').carousel({
+        interval: false
+        });
+        </script>
     </body>
 </html>

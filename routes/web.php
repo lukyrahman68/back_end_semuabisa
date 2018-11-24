@@ -1,4 +1,5 @@
 <?php
+use App\projek;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,11 +40,16 @@ Route::resource('admin/pricelist','pricelistcontroller');
 //-----------------frontend---------------------
 Route::get('/page/home', function () {
     $data="home";
-    return view('frontend.dashboard',compact('data'));
+    $projeks = projek::all();
+    return view('frontend.dashboard',compact('data','projeks'));
 });
 Route::get('/page/project', function () {
     $data="project";
     return view('frontend.project',compact('data'));
+});
+Route::get('/page/services', function () {
+    $data="services";
+    return view('frontend.our_service',compact('data'));
 });
 Route::get('/page/blog', function () {
     $data="blog";
@@ -52,6 +58,10 @@ Route::get('/page/blog', function () {
 Route::get('/page/about', function () {
     $data="about";
     return view('frontend.about_us',compact('data'));
+});
+Route::get('/page/detail_projek', function () {
+    $data="about";
+    return view('frontend.detail_projek',compact('data'));
 });
 
 

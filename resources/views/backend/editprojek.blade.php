@@ -7,7 +7,7 @@
                 <div class="box-header">
                   <i class="fa fa-envelope"></i>
     
-                  <h3 class="box-title">Quick Email</h3>
+                  <h3 class="box-title">Edit project</h3>
                   <!-- tools box -->
                   <div class="pull-right box-tools">
                     
@@ -33,12 +33,15 @@
                       <!--<input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">-->
                     </div>
                     <div class="form-group">
+                    <strong>Judul : </strong>
                       <input type="text" class="form-control" name="judul" placeholder="Judul" value="{{$projek->nama}}">
                     </div>
                     <div class="form-group">
+                    <strong>Kategori : </strong>
                       <input type="text" class="form-control" name="kategori" placeholder="Kategori" value="{{$projek->kategori}}">
                     </div>
                     <div>
+                    <strong>Deskripsi :</strong>
                       <textarea class="textarea" placeholder="Deskripsi" name="deskripsi" 
                                 style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
                                 {{$projek->deskripsi}}

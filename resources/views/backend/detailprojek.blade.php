@@ -7,7 +7,7 @@
                 <div class="box-header">
                   <i class="fa fa-envelope"></i>
     
-                  <h3 class="box-title">Quick Email</h3>
+                  <h3 class="box-title">Detail project</h3>
                   <!-- tools box -->
                   <div class="pull-right box-tools">
                     

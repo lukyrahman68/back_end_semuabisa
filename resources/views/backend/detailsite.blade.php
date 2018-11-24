@@ -7,7 +7,7 @@
                 <div class="box-header">
                   <i class="fa fa-envelope"></i>
     
-                  <h3 class="box-title">Detail artikel</h3>
+                  <h3 class="box-title">Detail site</h3>
                   <!-- tools box -->
                   <div class="pull-right box-tools">
                     
@@ -29,15 +29,15 @@
                   
                     <div class="form-group">
                     <strong>Judul:</strong>
-                        {{ $artikel->nama }}
+                        {{ $site->nama }}
                     </div>
                     <div class="form-group">
                     <strong>Kategori:</strong>
-                        {{ $artikel->kategori }}
+                        {{ $site->kategori }}
                     </div>
                     <div>
                     <strong>Deskripsi:</strong>
-                        {{$artikel->deskripsi}}   
+                        {{$site->deskripsi}}   
                     </div>
                     <div class="box-footer clearfix">
               </div>

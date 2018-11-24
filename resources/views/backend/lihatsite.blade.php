@@ -4,34 +4,34 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data artikel</h3>
+              <h3 class="box-title">Data site</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example1" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                <th>ID</th>
-                  <th>Judul</th>
-                  <th>Deskripsi</th>
-                  <th>Penulis</th>
+                  <th>Page</th>
+                  <th>Deskripsi1</th>
+                  <th>Deskripsi2</th>
+                  <th>Deskripsi3</th>
                   <th>Aksi</th>
                 
                 </tr>
                 </thead>
                 <tbody>
-                @foreach ($artikel as $artikel)
+                @foreach ($site as $site)
                 <tr>
-                    <td>{{ $artikel->id }}</td>
-                    <td>{{ $artikel->nama }}</td>
-                    <td>{{ $artikel->deskripsi }}</td>
-                    <td>{{ $artikel->penulis }}</td>
+                    <td>{{ $site->page }}</td>
+                    <td>{{ $site->deskripsi1 }}</td>
+                    <td>{{ $site->deskripsi2 }}</td>
+                    <td>{{ $site->deskripsi3 }}</td>
                     <td>
-                        <form action="{{ route('artikel.destroy',$artikel->id) }}" method="POST">
+                        <form action="{{ route('site.destroy',$site->id) }}" method="POST">
         
-                            <a class="btn btn-info" href="{{ route('artikel.show',$artikel->id) }}">Show</a>
+                            <a class="btn btn-info" href="{{ route('site.show',$site->id) }}">Show</a>
             
-                            <a class="btn btn-primary" href="{{ route('artikel.edit',$artikel->id) }}">Edit</a>
+                            <a class="btn btn-primary" href="{{ route('site.edit',$site->id) }}">Edit</a>
         
                             @csrf
                             @method('DELETE')

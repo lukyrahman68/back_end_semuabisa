@@ -15,7 +15,12 @@ class CreateSite extends Migration
     {
         Schema::create('sites', function (Blueprint $table) {
             $table->increments('id');
-            $table->String('nama');
+            $table->String('page');
+            $table->String('deskripsi1');
+            $table->String('deskripsi2');
+            $table->String('deskripsi3');
+            $table->String('metadatadescription');
+            $table->String('metadatakeywords');
             $table->timestamps();
         });
     }

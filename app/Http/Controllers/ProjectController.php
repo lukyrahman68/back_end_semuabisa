@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Projek;
+use App\media;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -46,20 +47,34 @@ class ProjectController extends Controller
 	    	$project->dibaca = "0";
 	    	$project->created_at = now();
 	    	$project->updated_at = now();
-	    	$project->save();
+            $project->save();
 
-	        if ($request->has('gambar')) {
-                $image = $request->file('gambar');
-                $ext = $image->guessClientExtension();
-                $img = $project->id.'.'.$ext;
-                $image->move(public_path('project'),$img);
+            $bb=0;
+            for($aa=1;$aa<=$request->get("jumlahmedia");$aa++){
+                if ($request->has('gambar'.$aa)) {
+                    $bb++;
+
+                    $image = $request->file('gambar'.$aa);
+                    $ext = $image->guessClientExtension();
+                    $img = $project->id.'-'.$bb.'.'.$ext;
+                    $image->move(public_path('project'),$img);
+
+                    $media = new media();
+                    $media->idkonten = $project->id;
+                    $media->idmedia = $bb;
+                    $media->format = $ext;
+                    $media->kategori = "project";
+                    $media->created_at = now();
+                    $media->updated_at = now();
+                    $media->save();
+                }
             }
             
 			return redirect()->route('project.index')->with('sukses','projek berhasil ditambahkan');
     	}
     	catch(Exception $e){
     		$msg=$e->getMessage();
-    		return redirect()->route('project.index')->with('gagal','projek gagal ditambahkan');
+    		return redirect()->route('project.index')->with('gagal',$msg);
     	}
     }
    
@@ -115,7 +130,7 @@ class ProjectController extends Controller
 
       	$project->save();
         
-        return redirect()->route('project.edit')
+        return redirect()->route('project.show',$project->id)
                         ->with('success','project updated successfully');
     }
   
@@ -129,7 +144,7 @@ class ProjectController extends Controller
     {
         $project->delete();
   
-        return redirect()->route('backend.lihatprojek')
+        return redirect()->route('project.index')
                         ->with('success','project deleted successfully');
     }
 }

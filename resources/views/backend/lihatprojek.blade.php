@@ -4,17 +4,28 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Hover Data Table</h3>
+              <h3 class="box-title">Data project</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+            @if (session('sukses'))
+                  <div class="alert alert-success">
+                      {{ session('sukses') }}
+                  </div>
+              @endif
+
+              @if (session('gagal'))
+                  <div class="alert alert-danger">
+                      {{ session('gagal') }}
+                  </div>
+              @endif
               <table id="example1" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
+                  <th>ID</th>
+                  <th>Judul</th>
+                  <th>Deskripsi</th>
+                  <th>Aksi</th>
                 
                 </tr>
                 </thead>

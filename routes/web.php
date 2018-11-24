@@ -15,6 +15,12 @@ use App\projek;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/admin', function () {
+    $data = array(
+        'hal' => 'dashboard',
+        'sub' => '');
+    return view('backend.dashboard')->with($data);
+});
 Route::get('/admin/home', function () {
     $data = array(
         'hal' => 'dashboard',

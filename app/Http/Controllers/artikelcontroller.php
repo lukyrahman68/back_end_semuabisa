@@ -116,7 +116,7 @@ class artikelController extends Controller
 
       	$artikel->save();
         
-        return redirect()->route('artikel.edit')
+        return redirect()->route('artikel.show',$artikel->id)
                         ->with('success','artikel updated successfully');
     }
   
@@ -129,8 +129,7 @@ class artikelController extends Controller
     public function destroy(artikel $artikel)
     {
         $artikel->delete();
-  
-        return redirect()->route('backend.lihatartikel')
+        return redirect()->route('artikel.index')
                         ->with('success','artikel deleted successfully');
     }
 }

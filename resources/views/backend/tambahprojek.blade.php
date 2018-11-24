@@ -28,9 +28,10 @@
               @endif
                   <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <div id="media">
-                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">
-                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">
+                    <div>
+                      <input type="text" name="jumlahmedia" id="jumlahmedia" value="1">
+                      <input type="file" class="form-control file-input" name="gambar1" placeholder="Masukkan gambar">
+                      <div id="media"></div>
                     </div>
                     <button type="button" class="btn btn-default" onclick=tambahmedia()>+
                     </button>
@@ -50,13 +51,15 @@
                 </div>
                   </form>
                 </div>
-                
               </div>
     <script>
+    var a = 1;
     function tambahmedia(){
-    //document.getElementById("media").append('<input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">');
-      document.getElementById("media").innerHTML += "<input type='file' class='form-control file-input' name='gambar' placeholder='Masukkan gambar'>";
-
+      a++;
+      //document.getElementById("media").innerHTML += "<input type='file' class='form-control file-input' name='gambar"+a+"' placeholder='Masukkan gambar'>";
+      var bb = '<b>a</b>';
+      document.getElementById("media").append(bb);
+      document.getElementById("jumlahmedia").value = a;
     }
     </script>
     @endsection

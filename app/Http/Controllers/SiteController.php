@@ -109,7 +109,7 @@ class siteController extends Controller
 
       	$site->save();
         
-        return redirect()->route('site.edit')
+        return redirect()->route('site.show',$site->id)
                         ->with('success','site updated successfully');
     }
   
@@ -123,7 +123,7 @@ class siteController extends Controller
     {
         $site->delete();
   
-        return redirect()->route('backend.lihatsite')
+        return redirect()->route('site.index')
                         ->with('success','site deleted successfully');
     }
 }

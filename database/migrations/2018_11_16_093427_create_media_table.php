@@ -18,6 +18,7 @@ class CreateMediaTable extends Migration
             $table->String('idkonten');
             $table->String('idmedia');
             $table->String('format');
+            $table->String('kategori');
             $table->timestamps();
         });
     }

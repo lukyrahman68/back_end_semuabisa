@@ -1,3 +1,6 @@
+@guest
+{{redirect()->to("login")->send()}}
+@else
 <!DOCTYPE html>
 <html>
 <head>
@@ -694,3 +697,4 @@
 
 </body>
 </html>
+@endguest

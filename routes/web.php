@@ -38,12 +38,19 @@ Route::resource('admin/site','SiteController');
 //-----------------frontend---------------------
 Route::get('/page/home', function () {
     $data="home";
-    $projeks = projek::all();
+    // $projeks = projek::all();
+    $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
+                ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
+                ->get(); 
+                // return $projeks;
     return view('frontend.dashboard',compact('data','projeks'));
 });
 Route::get('/page/project', function () {
     $data="project";
-    return view('frontend.project',compact('data'));
+    $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
+                ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
+                ->get(); 
+    return view('frontend.project',compact('data','projeks'));
 });
 Route::get('/page/services', function () {
     $data="services";
@@ -61,6 +68,8 @@ Route::get('/page/detail_projek', function () {
     $data="about";
     return view('frontend.detail_projek',compact('data'));
 });
+Route::view('/grocery', 'grocery');
+Route::post('/grocery/post', 'GroceryController@store');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

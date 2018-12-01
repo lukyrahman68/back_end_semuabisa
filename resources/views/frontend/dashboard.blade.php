@@ -309,32 +309,29 @@
                         </div>
                         <ul class="our_project_filter">
                             <li class="active" data-filter="*"><a href="#">All</a></li>
-                            <li data-filter=".building"><a href="#">Buildings</a></li>
-                            <li data-filter=".interior"><a href="#">Interior</a></li>
-                            <li data-filter=".design"><a href="#">Design</a></li>
-                            <li data-filter=".isolation"><a href="#">Isolation</a></li>
-                            <li data-filter=".plumbing"><a href="#">Plumbing</a></li>
-                            <li data-filter=".tiling"><a href="#">Tiling</a></li>
+                            @foreach ( $projeks->unique('kategori') as $projek)
+                            <li data-filter=".{{$projek->kategori}}"><a href="#">{{$projek->kategori}}   </a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <div class="our_project_details">
-                        <div class="project_item building isolation tiling hitam_putih">
-                            @foreach ( $projeks as $projek)
-                            <img src="{{asset('img/our_project/949A6473-Edit.jpg')}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
+                        
+                        @foreach ( $projeks as $projek)
+                        <div class="project_item {{$projek->kategori}} isolation tiling hitam_putih">
+                            <img src="{{asset('project/'.$projek->id.'-'.$projek->idmedia.'.'.$projek->format)}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
                                         <a href="#"><h4>{{$projek->nama}}</h4></a>
-                                        <p>{{str_limit($projek->deskripsi,50)}} </p>
+                                        <p>{!!str_limit($projek->deskripsi,50)!!} </p>
                                         <a class="view_btn" href="#">View Project</a>
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
                         </div>
-                        
+                        @endforeach
                     </div>
                 </div>
             </div>

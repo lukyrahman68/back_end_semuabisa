@@ -266,10 +266,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="{{asset('js/libs.js')}}"></script>
         <!--gmaps Js-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
-        $('.carousel').carousel({
-        interval: false
-        });
+            function getMessage(){
+               $.ajax({
+                  type:'POST',
+                  url:'/getmsg',
+                  data:'_token = {{csrf_token()}}',
+                  success:function(data){
+                     $("#msg").html(data.msg);
+                  }
+               });
+            }
         </script>
     </body>
 </html>

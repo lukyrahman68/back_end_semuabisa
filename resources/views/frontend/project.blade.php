@@ -173,8 +173,8 @@
                       <label class="btn btn-primary active">
                         <input type="radio" name="options" id="option1" autocomplete="off" checked> Photo
                       </label>
-                      <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option2" autocomplete="off"> Video
+                      <label class="btn btn-primary" onclick="">
+                        <input type="radio" name="options" id="option2" autocomplete="off" > Video
                       </label>
                       <label class="btn btn-primary">
                         <input type="radio" name="options" id="option3" autocomplete="off"> Website
@@ -185,10 +185,9 @@
                     </div>
                     <ul class="nav nav-tabs our_project_filter">
                         <li class="active" data-filter="*"><a href="#">All</a></li>
-                        <li data-filter=".building"><a href="#">Wedding</a></li>
-                        <li data-filter=".interior"><a href="#">Pre-Wedding</a></li>
-                        <li data-filter=".design"><a href="#">Commercial</a></li>
-                        <li data-filter=".isolation"><a href="#">Documentation</a></li>
+                        @foreach ( $projeks->unique('kategori') as $projek)
+                            <li data-filter=".{{$projek->kategori}}"><a href="#">{{$projek->kategori}}   </a></li>
+                        @endforeach
                       </ul><br>
                     <div>
                             

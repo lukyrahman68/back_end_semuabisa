@@ -31,6 +31,8 @@ Route::resource('admin/project','ProjectController');
 Route::resource('admin/artikel','artikelController');
 Auth::routes();
 Route::resource('admin/site','SiteController');
+Route::resource('admin/testimoni','testimonicontroller');
+Route::resource('admin/pricelist','pricelistcontroller');
 //Auth::routes();
 
 //-----------------/backend---------------------

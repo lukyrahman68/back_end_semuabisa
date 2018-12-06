@@ -1,5 +1,6 @@
 <?php
 use App\projek;
+use App\artikel;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,7 +44,7 @@ Route::get('/page/home', function () {
     // $projeks = projek::all();
     $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
                 ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
-                ->get(); 
+                ->get();
                 // return $projeks;
     return view('frontend.dashboard',compact('data','projeks'));
 });
@@ -51,7 +52,7 @@ Route::get('/page/project', function () {
     $data="project";
     $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
                 ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
-                ->get(); 
+                ->get();
     return view('frontend.project',compact('data','projeks'));
 });
 Route::get('/page/services', function () {
@@ -60,7 +61,8 @@ Route::get('/page/services', function () {
 });
 Route::get('/page/blog', function () {
     $data="blog";
-    return view('frontend.blog',compact('data'));
+    $artikels = artikel::all();
+    return view('frontend.blog',compact('data','artikels'));
 });
 Route::get('/page/about', function () {
     $data="about";

@@ -48,7 +48,7 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"><span>SEMUABISA</span> <span class="art">ART</span></div>
 
-                        <div class="tp-caption first_text"
+                        <div class="tp-caption secand_text"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
@@ -215,7 +215,7 @@
     <section class="who_we_are_area vh_content">
         <div class="container home_container">
             <div class="row who_we_inner">
-                <div class="col-md-12 border_tu">
+                <div class="col-md-12 border_tu col-xs-12 col-sm-12">
                     <div class="title_trust_us">
                         <div class="garis">
                             Trust <span style="color:red">US</span>
@@ -225,11 +225,12 @@
             </div>
         </div>
         <div class="container padding_vh">
-            <div class="col-md-12 border_vh">
+            <div class="col-md-12 border_vh col-xs-12 col-sm-12" style="margin: 0;margin-bottom: 1em;">
                     Text
             </div>
         </div>
     </section>
+
     <!--================End Who We Are Area =================-->
 
     <!--================Our Service Area =================-->
@@ -317,7 +318,7 @@
                 </div>
                 <div class="col-md-9">
                     <div class="our_project_details">
-                        
+
                         @foreach ( $projeks as $projek)
                         <div class="project_item {{$projek->kategori}} isolation tiling hitam_putih">
                             <img src="{{asset('project/'.$projek->id.'-'.$projek->idmedia.'.'.$projek->format)}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">

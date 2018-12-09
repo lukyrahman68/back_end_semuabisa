@@ -28,12 +28,19 @@
               @endif
                   <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <div>
+                    <div><Strong>File</Strong>
                       <input type="text" name="jumlahmedia" id="jumlahmedia" value="1" hidden>
                       <input type="file" class="form-control file-input" name="gambar1" placeholder="Masukkan gambar">
                       <div id="media"></div>
                     </div>
                     <button type="button" class="btn btn-default" onclick=tambahmedia()>+
+                    </button>
+                    <div><Strong>Link</Strong>
+                      <input type="text" name="jumlahlink" id="jumlahlink" value="1" hidden>
+                      <input type="text" class="form-control file-input" name="link1">
+                      <div id="link"></div>
+                    </div>
+                    <button type="button" class="btn btn-default" onclick=tambahlink()>+
                     </button>
                     <div class="form-group">
                       <input type="text" class="form-control" name="judul" placeholder="Judul">
@@ -59,6 +66,12 @@
       document.getElementById("media").innerHTML += "<input type='file' class='form-control file-input' name='gambar"+a+"' placeholder='Masukkan gambar'>";
       //document.getElementById("media").append("<input type='file' class='form-control file-input' name='gambar' placeholder='Masukkan gambar'>");
       document.getElementById("jumlahmedia").value = a;
+    }
+    var b = 1;
+    function tambahlink(){
+      b++;
+      document.getElementById("link").innerHTML += "<input type='text' class='form-control file-input' name='link"+b+"'>";
+      document.getElementById("jumlahlink").value = b;
     }
     </script>
     @endsection

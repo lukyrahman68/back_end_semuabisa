@@ -46,6 +46,7 @@ Route::get('/page/home', function () {
     // $projeks = projek::all();
     $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
                 ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
+                ->orderBy('created_at','desc')
                 ->limit(9)
                 ->get();
     $testimonis = testimoni::all();

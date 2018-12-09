@@ -48,7 +48,7 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"><span>SEMUABISA</span> <span class="art">ART</span></div>
 
-                        <div class="tp-caption first_text"
+                        <div class="tp-caption secand_text"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
@@ -226,7 +226,11 @@
         </div>
         <div class="container padding_vh">
             <div class="col-md-12 border_vh col-xs-12 col-sm-12" style="margin: 0;margin-bottom: 1em;">
-                    Text asdasdas
+                    Halloo ! Perkenalkan, kami adalah sebuah instansi yang bergerak di bidang jasa pemotretan dan pengambilan
+                    video untuk wilayah surabaya dan sekitarnya, dengan seluruh anggota yang profesional, kami telah dipercaya oleh banyak
+                    client untuk membuat content foto, video, website dan desain sesuai kebutuhan mereka yang dijamin memuaskan (bukan abal2 yang penting jadi)
+                    Jangan sampai karena perbedaan harga yang tipis membuat anda menyesal karena perbedaan kualitas yang terlampau jauh ....
+                    Jadi jangan sampai pilih vendor ! Yuk segera tentukan paketmu dan segera hubungi kami !
             </div>
         </div>
     </section>
@@ -378,16 +382,34 @@ Teknologi Informasi yang dibutuhkan oleh para .....</p>
                 <div class="col-md-8">
                     <div class="testimonials_slider owl-carousel">
                         <div class="item">
-                            @foreach ($testimonis as $testimoni)
-                                <div class="testi_left">
-                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                    <p>{!!$testimoni->testimoni!!}</p>
-                                    <a href="#"><h4>{{$testimoni->nama}}</h4></a>
-                                </div>
-                                <div class="testi_right">
-                                    <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                                </div>
-                            @endforeach
+                            <div class="testi_left">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
+                            </div>
+                            <div class="testi_right">
+                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testi_left">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
+                            </div>
+                            <div class="testi_right">
+                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testi_left">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
+                            </div>
+                            <div class="testi_right">
+                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>

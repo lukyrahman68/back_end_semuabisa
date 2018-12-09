@@ -118,7 +118,11 @@
                                     active
                                 @endif
                                 "><a href="{{route('price_list_photo')}}">Price List</a></li>
-                                <li><a href="about">about us</a></li>
+                                <li class="
+                                @if($data=='about')
+                                    active
+                                @endif
+                                "><a href="{{route('about')}}">about us</a></li>
                                 <li class="
                                 @if($data=='blog')
                                     active
@@ -236,29 +240,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="{{asset('vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js')}}"></script>
-        <script>
-       $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            responsiveClass:true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    items:2,
-                    nav:false
-                },
-                1000:{
-                    items:3,
-                    nav:true,
-                    loop:false
-                }
-            }
-        })
-        });
-        </script>
+        @yield('script')
     </body>
 </html>

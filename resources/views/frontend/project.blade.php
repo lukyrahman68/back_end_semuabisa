@@ -3,7 +3,7 @@
 @section('content')
     <!--================Main Slider Area =================-->
     <section class="main_slider_area">
-        <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
+        <div id="main_slider" class="rev_slider" data-version="5.3.1.6" style="max-height: 400px !important;">
             <ul>
                 <li data-index="rs-2972" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
@@ -11,7 +11,7 @@
                     <!-- LAYERS -->
                     <div class="slider_text_box">
 
-                        <div class="tp-caption secand_text"
+                        <div class="tp-caption secand_text oke"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
@@ -237,7 +237,7 @@
                                                         <div class="project_hover_content">
                                                             <a href="#"><h4>{{$projek->nama}}</h4></a>
                                                             <p>{!!str_limit($projek->deskripsi,50)!!} </p>
-                                                            <a class="view_btn" href="#">View Project</a>
+                                                            <a class="view_btn" href="{{route('detail_projek',$projek->id)}}">View Project</a>
                                                         </div>
                                                     </div>
                                                 </div>

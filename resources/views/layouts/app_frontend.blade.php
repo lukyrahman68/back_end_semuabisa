@@ -12,9 +12,11 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/libs.css')}}">
         <link rel="stylesheet" href="{{asset('css/costume.css')}}">
+        <link rel="stylesheet" href="{{asset('vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css')}}" / >
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
         <style>
             /* Indicators list style */
 .article-slide .carousel-indicators {
@@ -100,12 +102,12 @@
                                 @if($data=='home')
                                     active
                                 @endif
-                                "><a href="home">Home</a></li>
+                                "><a href="{{route('daboard_home')}}">Home</a></li>
                                 <li class="
                                 @if($data=='project')
                                     active
                                 @endif
-                                "><a href="project">Project</a></li>
+                                "><a href="{{route('photo')}}">Project</a></li>
                                 <li class="
                                 @if($data=='services')
                                     active
@@ -231,17 +233,32 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <!--gmaps Js-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="{{asset('vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js')}}"></script>
         <script>
-            function getMessage(){
-               $.ajax({
-                  type:'POST',
-                  url:'/getmsg',
-                  data:'_token = {{csrf_token()}}',
-                  success:function(data){
-                     $("#msg").html(data.msg);
-                  }
-               });
+       $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:true,
+                    loop:false
+                }
             }
+        })
+        });
         </script>
     </body>
 </html>

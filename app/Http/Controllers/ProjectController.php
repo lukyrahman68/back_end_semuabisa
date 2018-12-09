@@ -86,7 +86,7 @@ class ProjectController extends Controller
      */
     public function show(projek $project)
     {
-        $media = media::where('idkonten', '=', '12')->get();
+        $media = media::where('idkonten', '=', $project->id)->get();
         $data = array(
             'hal' => 'project',
             'sub' => 'lihat',

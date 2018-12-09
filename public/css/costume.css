@@ -5,7 +5,9 @@
 .FreestyleScript{
     font-family: FreestyleScript !important;
 }
-
+.oke{
+    margin-top: -500px !important;
+}
 .main_menu_area{
     background-color: #000 !important;
 }
@@ -78,6 +80,21 @@ html{
 .hitam_putih:hover img {
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
+}
+@media (max-width: 1199px) {
+    .oke{
+        margin-top: -400px !important;
+    }
+}
+@media (max-width: 991px) {
+    .oke{
+        margin-top: -250px !important;
+    }
+}
+@media (max-width: 765px) {
+    .oke{
+        margin-top: -100px !important;
+    }
 }
 @media (max-width: 499px) {
     .our_service_area{

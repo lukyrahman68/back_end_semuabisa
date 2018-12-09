@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Projek;
 use App\media;
+use App\link;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -69,7 +70,21 @@ class ProjectController extends Controller
                     $media->save();
                 }
             }
-            
+
+            $bba=0;
+            for($aaa=1;$aaa<=$request->get("jumlahlink");$aaa++){
+                if ($request->has('link'.$aaa)) {
+                    $bba++;
+                    $link = new link();
+                    $link->idkonten = $project->id;
+                    $link->idlink = $bba;
+                    $link->isi = $request->get('link'.$bba);
+                    $link->kategori = "project";
+                    $link->created_at = now();
+                    $link->updated_at = now();
+                    $link->save();
+                }
+            }
 			return redirect()->route('project.index')->with('sukses','projek berhasil ditambahkan');
     	}
     	catch(Exception $e){
@@ -87,11 +102,13 @@ class ProjectController extends Controller
     public function show(projek $project)
     {
         $media = media::where('idkonten', '=', $project->id)->get();
+        $link = link::where('idkonten', '=', $project->id)->get();
         $data = array(
             'hal' => 'project',
             'sub' => 'lihat',
             'projek' => $project,
-            'media' => $media);
+            'media' => $media,
+            'link' => $link);
         return view('backend.detailprojek',compact('project'))->with($data);
     }
    

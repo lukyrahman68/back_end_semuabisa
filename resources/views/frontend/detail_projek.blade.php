@@ -166,35 +166,53 @@
     <!--================End Main Slider Area =================-->
     <div class="container">
         <div class="owl-carousel owl-theme">
-                <div>
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style="max-width: 1920px;max-height: 1080px;"></iframe>
+            @foreach ($links as $link)
+            <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" allowfullscreen="allowfullscreen"
+                    mozallowfullscreen="mozallowfullscreen"
+                    msallowfullscreen="msallowfullscreen"
+                    oallowfullscreen="oallowfullscreen"
+                    webkitallowfullscreen="webkitallowfullscreen" src="{{$link->isi}}" style="max-width: 1920px;max-height: 1080px;"></iframe>
                 </div>
-                <div>
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style="max-width: 1920px;max-height: 1080px;"></iframe>
-                </div>
-                <div>
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style="max-width: 1920px;max-height: 1080px;"></iframe>
-                </div>
-                <div>
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style="max-width: 1920px;max-height: 1080px;"></iframe>
-                </div>
-                <div>
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style="max-width: 1920px;max-height: 1080px;"></iframe>
-                </div>
-                <div>
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style="max-width: 1920px;max-height: 1080px;"></iframe>
-                </div>
-                <div>
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style="max-width: 1920px;max-height: 1080px;"></iframe>
-                </div>
+            @endforeach
+            @foreach ($projek as $item)
+                <img src="{{asset('project/'.$item->id.'-'.$item->idmedia.'.'.$item->format)}}" alt="" srcset="" style="max-width:300px;max-height: 250px;object-fit: contain">
+            @endforeach
 
         </div>
         <div class="col-md-12">
-            <b><h2>{{$projek->nama}}</h2></b><br>
-            {!!$projek->deskripsi!!}
+            @foreach ($projek as $item)
+                <b><h2>{{$item->nama}}</h2></b><br>
+                {!!$item->deskripsi!!}
+            @endforeach
         </div>
     </div>
     <br><br>
 
-
+@endsection
+@section('script')
+<script>
+        $(document).ready(function(){
+         $('.owl-carousel').owlCarousel({
+             loop:true,
+             margin:10,
+             responsiveClass:true,
+             responsive:{
+                 0:{
+                     items:1,
+                     nav:true
+                 },
+                 600:{
+                     items:2,
+                     nav:false
+                 },
+                 1000:{
+                     items:3,
+                     nav:true,
+                     loop:false
+                 }
+             }
+         })
+         });
+         </script>
 @endsection

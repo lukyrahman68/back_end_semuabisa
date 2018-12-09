@@ -3,6 +3,7 @@ use App\projek;
 use App\testimoni;
 use App\pricelist;
 use App\artikel;
+use App\link;
 
 /*
 |--------------------------------------------------------------------------
@@ -133,8 +134,12 @@ Route::get('/page/about', function () {
 })->name('about');
 Route::get('/page/detail_projek/{id}', function ($id) {
     $data="about";
-    $projek = projek::findOrFail($id);
-    return view('frontend.detail_projek',compact('data','projek'));
+    $projek = projek::join('media','projeks.id', '=', 'media.idkonten')
+                ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
+                ->where('projeks.id',$id)
+                ->get();
+    $links = link::where('idkonten',$id)->get();
+    return view('frontend.detail_projek',compact('data','projek','links'));
 })->name('detail_projek');
 
 

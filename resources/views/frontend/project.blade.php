@@ -10,7 +10,7 @@
                     <img src="{{asset('img/home_img.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box">
-                       
+
                         <div class="tp-caption secand_text"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
@@ -30,7 +30,7 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"><span>FULL PROJECT</span></div>
 
-                        
+
                     </div>
                 </li>
                 <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home-slider/slider-1.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -170,17 +170,49 @@
                     <h2> <span style="color:red">Our</span> <br class="title_br"><span style="color:black">Project</span></h2>
                     <h6><span style="color:black">Provide Your Art Solution</span></h6><br>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                      <label class="btn btn-primary active">
-                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Photo
+                      <label class="btn btn-primary
+                        @if($sub_data=="photo")
+                            active
+                        @endif
+                      " onclick="location.href='http://127.0.0.1:8000/page/project/'">
+                        <input type="radio" name="options" id="option1" autocomplete="off"
+                        @if($sub_data=="photo")
+                            checked
+                        @endif
+                        > Photo
                       </label>
-                      <label class="btn btn-primary" onclick="">
-                        <input type="radio" name="options" id="option2" autocomplete="off" > Video
+                      <label class="btn btn-primary
+                        @if($sub_data=="video")
+                            active
+                        @endif
+                      " onclick="location.href='video'">
+                        <input type="radio" name="options" id="option2" autocomplete="off"
+                        @if($sub_data=="video")
+                            checked
+                        @endif
+                        > Video
                       </label>
-                      <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option3" autocomplete="off"> Website
+                      <label class="btn btn-primary
+                        @if($sub_data=="website")
+                            active
+                        @endif
+                      " onclick="location.href='website'">
+                        <input type="radio" name="options" id="option3" autocomplete="off"
+                        @if($sub_data=="website")
+                            checked
+                        @endif
+                        > Website
                       </label>
-                      <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option3" autocomplete="off"> Desain
+                      <label class="btn btn-primary
+                        @if($sub_data=="desain")
+                            active
+                        @endif
+                      " onclick="location.href='desain'">
+                        <input type="radio" name="options" id="option3" autocomplete="off"
+                        @if($sub_data=="desain")
+                            checked
+                        @endif
+                        > Desain
                       </label><br><br>
                     </div>
                     <ul class="nav nav-tabs our_project_filter">
@@ -190,7 +222,7 @@
                         @endforeach
                       </ul><br>
                     <div>
-                            
+
                                 <div class="row">
                                     <div class="col-md-2">
 
@@ -275,10 +307,10 @@
 
                                     </div>
                                 </div>
-                           
+
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>

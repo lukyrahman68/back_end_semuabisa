@@ -3,7 +3,7 @@
 @section('content')
     <!--================Main Slider Area =================-->
     <section class="main_slider_area">
-        <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
+        <div id="main_slider" class="rev_slider" data-version="5.3.1.6" style="max-height: 400px !important;">
             <ul>
                 <li data-index="rs-2972" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
@@ -11,7 +11,7 @@
                     <!-- LAYERS -->
                     <div class="slider_text_box">
 
-                        <div class="tp-caption secand_text"
+                        <div class="tp-caption secand_text oke"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
@@ -174,7 +174,7 @@
                         @if($sub_data=="photo")
                             active
                         @endif
-                      " onclick="location.href='http://127.0.0.1:8000/page/project/'">
+                      " onclick="location.href='{{route("photo")}}'">
                         <input type="radio" name="options" id="option1" autocomplete="off"
                         @if($sub_data=="photo")
                             checked
@@ -185,7 +185,7 @@
                         @if($sub_data=="video")
                             active
                         @endif
-                      " onclick="location.href='video'">
+                      " onclick="location.href='{{route("video")}}'">
                         <input type="radio" name="options" id="option2" autocomplete="off"
                         @if($sub_data=="video")
                             checked
@@ -196,7 +196,7 @@
                         @if($sub_data=="website")
                             active
                         @endif
-                      " onclick="location.href='website'">
+                      " onclick="location.href='{{route("website")}}'">
                         <input type="radio" name="options" id="option3" autocomplete="off"
                         @if($sub_data=="website")
                             checked
@@ -207,7 +207,7 @@
                         @if($sub_data=="desain")
                             active
                         @endif
-                      " onclick="location.href='desain'">
+                      " onclick="location.href='{{route("desain")}}'">
                         <input type="radio" name="options" id="option3" autocomplete="off"
                         @if($sub_data=="desain")
                             checked
@@ -215,13 +215,13 @@
                         > Desain
                       </label><br><br>
                     </div>
-                    <ul class="nav nav-tabs our_project_filter">
+                    {{-- <ul class="nav nav-tabs our_project_filter">
                         <li class="active" data-filter="*"><a href="#">All</a></li>
                         @foreach ( $projeks->unique('kategori') as $projek)
                             <li data-filter=".{{$projek->kategori}}"><a href="#">{{$projek->kategori}}   </a></li>
                         @endforeach
                       </ul><br>
-                    <div>
+                    <div> --}}
 
                                 <div class="row">
                                     <div class="col-md-2">
@@ -229,78 +229,20 @@
                                     </div>
                                     <div class="col-md-9">
                                         <div class="our_project_details">
-                                            <div class="project_item building isolation tiling hitam_putih">
-                                                <img src="{{asset('img/our_project/949A6473-Edit.jpg')}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
+                                            @foreach ( $projeks as $projek)
+                                            <div class="project_item {{$projek->kategori}} isolation tiling hitam_putih">
+                                                <img src="{{asset('project/'.$projek->id.'-'.$projek->idmedia.'.'.$projek->format)}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
                                                 <div class="project_hover">
                                                     <div class="project_hover_inner">
                                                         <div class="project_hover_content">
-                                                            <a href="#"><h4>Jahanara Vila</h4></a>
-                                                            <p>Sed ut perspiciatis unde omni    s iste natus error sit voluptatem accusantium </p>
-                                                            <a class="view_btn" href="#">View Project</a>
+                                                            <a href="#"><h4>{{$projek->nama}}</h4></a>
+                                                            <p>{!!str_limit($projek->deskripsi,50)!!} </p>
+                                                            <a class="view_btn" href="{{route('detail_projek',$projek->id)}}">View Project</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="project_item building isolation plumbing hitam_putih">
-                                                <img src="{{asset('img/our_project/flower.jpg')}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
-                                                <div class="project_hover">
-                                                    <div class="project_hover_inner">
-                                                        <div class="project_hover_content">
-                                                            <a href="#"><h4>Jahanara Vila</h4></a>
-                                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                                            <a class="view_btn" href="#">View Project</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="project_item building interior design hitam_putih">
-                                                <img src="{{asset('img/our_project/images.jpg')}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
-                                                <div class="project_hover">
-                                                    <div class="project_hover_inner">
-                                                        <div class="project_hover_content">
-                                                            <a href="#"><h4>Jahanara Vila</h4></a>
-                                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                                            <a class="view_btn" href="#">View Project</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="project_item interior isolation plumbing hitam_putih">
-                                                <img src="{{asset('img/our_project/thumb-1920-462581.jpg')}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
-                                                <div class="project_hover">
-                                                    <div class="project_hover_inner">
-                                                        <div class="project_hover_content">
-                                                            <a href="#"><h4>Jahanara Vila</h4></a>
-                                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                                            <a class="view_btn" href="#">View Project</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="project_item interior design tiling hitam_putih">
-                                                <img src="{{asset('img/our_project/web-development-solutions-dubai.jpg')}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
-                                                <div class="project_hover">
-                                                    <div class="project_hover_inner">
-                                                        <div class="project_hover_content">
-                                                            <a href="#"><h4>Jahanara Vila</h4></a>
-                                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                                            <a class="view_btn" href="#">View Project</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="project_item design plumbing tiling hitam_putih">
-                                                <img src="{{asset('img/project/project-6.jpg')}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
-                                                <div class="project_hover">
-                                                    <div class="project_hover_inner">
-                                                        <div class="project_hover_content">
-                                                            <a href="#"><h4>Jahanara Vila</h4></a>
-                                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                                            <a class="view_btn" href="#">View Project</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            @endforeach
                                         </div>
                                     </div>
                                     <div class="col-md-1">

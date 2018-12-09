@@ -1,3 +1,13 @@
+@font-face {
+    font-family: FreestyleScript;
+    src: url("../fonts/FREESCPT.TTF") /* TTF file for CSS3 browsers */
+}
+.FreestyleScript{
+    font-family: FreestyleScript !important;
+}
+.oke{
+    margin-top: -500px !important;
+}
 .main_menu_area{
     background-color: #000 !important;
 }
@@ -34,7 +44,7 @@ html{
     text-align: center;
     justify-content: center;
     margin-bottom: 20px;
-    
+
 }
 *:not(i){
     font-family: Century Gothic !important;
@@ -71,12 +81,27 @@ html{
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
+@media (max-width: 1199px) {
+    .oke{
+        margin-top: -400px !important;
+    }
+}
+@media (max-width: 991px) {
+    .oke{
+        margin-top: -250px !important;
+    }
+}
+@media (max-width: 765px) {
+    .oke{
+        margin-top: -100px !important;
+    }
+}
 @media (max-width: 499px) {
     .our_service_area{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
-        grid-template-areas: 
+        grid-template-areas:
         "item1"
         "item2";
     }

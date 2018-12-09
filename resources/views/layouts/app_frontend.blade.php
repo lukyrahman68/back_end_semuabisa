@@ -12,9 +12,11 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/libs.css')}}">
         <link rel="stylesheet" href="{{asset('css/costume.css')}}">
+        <link rel="stylesheet" href="{{asset('vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css')}}" / >
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
         <style>
             /* Indicators list style */
 .article-slide .carousel-indicators {
@@ -100,17 +102,22 @@
                                 @if($data=='home')
                                     active
                                 @endif
-                                "><a href="home">Home</a></li>
+                                "><a href="{{route('daboard_home')}}">Home</a></li>
                                 <li class="
                                 @if($data=='project')
                                     active
                                 @endif
-                                "><a href="project">Project</a></li>
+                                "><a href="{{route('photo')}}">Project</a></li>
                                 <li class="
                                 @if($data=='services')
                                     active
                                 @endif
                                 "><a href="{{route('services')}}">Services</a></li>
+                                <li class="
+                                @if($data=='price_list')
+                                    active
+                                @endif
+                                "><a href="{{route('price_list_photo')}}">Price List</a></li>
                                 <li><a href="about">about us</a></li>
                                 <li class="
                                 @if($data=='blog')
@@ -125,47 +132,6 @@
             </div>
         </header>
         @yield('content')
-        <!--================Address Area =================-->
-        <section class="address_area">
-            <div class="container">
-                <div class="row address_inner">
-                    <div class="col-md-4">
-                        <div class="media">
-                            <div class="media-left">
-                                <img src="{{asset('img/icon/place-icon.png')}}" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h4>Office Address :</h4>
-                                <h5>1234 Cafficic, California, USA</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media">
-                            <div class="media-left">
-                                <img src="{{asset('img/icon/phone-icon.png')}}" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h5>(012) 3456789</h5>
-                                <h5>(012) 3456789</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media">
-                            <div class="media-left">
-                                <img src="{{asset('img/icon/inbox-icon.png')}}" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h5>info@domain.com</h5>
-                                <h5>info@domain.com</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--================End Address Area =================-->
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -177,10 +143,10 @@
                                 <center><img  src="{{asset('img/logo/logo putih.png')}}" alt="" width="150" height="150" style="object-fit: contain;"></center>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium. ed quia consequuntur magni dolores eos qui ratione.</p>
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                                 </ul>
                             </aside>
                         </div>
@@ -267,17 +233,32 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <!--gmaps Js-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="{{asset('vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js')}}"></script>
         <script>
-            function getMessage(){
-               $.ajax({
-                  type:'POST',
-                  url:'/getmsg',
-                  data:'_token = {{csrf_token()}}',
-                  success:function(data){
-                     $("#msg").html(data.msg);
-                  }
-               });
+       $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:true,
+                    loop:false
+                }
             }
+        })
+        });
         </script>
     </body>
 </html>

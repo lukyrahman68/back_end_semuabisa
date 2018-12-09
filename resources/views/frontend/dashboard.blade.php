@@ -48,7 +48,7 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"><span>SEMUABISA</span> <span class="art">ART</span></div>
 
-                        <div class="tp-caption secand_text"
+                        <div class="tp-caption first_text"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"

@@ -86,10 +86,12 @@ class ProjectController extends Controller
      */
     public function show(projek $project)
     {
+        $media = media::where('idkonten', '=', '12')->get();
         $data = array(
             'hal' => 'project',
             'sub' => 'lihat',
-            'projek' => $project);
+            'projek' => $project,
+            'media' => $media);
         return view('backend.detailprojek',compact('project'))->with($data);
     }
    

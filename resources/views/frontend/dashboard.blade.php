@@ -226,7 +226,7 @@
         </div>
         <div class="container padding_vh">
             <div class="col-md-12 border_vh col-xs-12 col-sm-12" style="margin: 0;margin-bottom: 1em;">
-                    Text
+                    Text asdasdas
             </div>
         </div>
     </section>

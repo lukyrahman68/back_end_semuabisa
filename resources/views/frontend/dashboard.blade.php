@@ -244,7 +244,8 @@
                             <img src="{{asset('img/SB_movie_black.png')}}" height="50" width="50" alt="">
                         </div>
                         <a href="#"><h4>VIDEOGRAPHY</h4></a>
-                        <p>Dengan tenaga kerja yang profesional, semuabisa art dipecaya dapat membuat banyak jenis video yang diinginkan oleh client mulai dari wedding, pre-wedding, iklan, film dsb.</p>
+                        <p>Kami membuat konten cinematic videography mulai dari pembuatan video wedding, pre wedding, dokumentasi acara seminar, dokumentasi acara musik,
+film pendek, company profile, traveling video dan masih banyak lagi.</p>
                         <a class="view_btn" href="#">Read Details</a>
                     </div>
                 </div>
@@ -255,7 +256,8 @@
                             <img src="{{asset('img/SB_camera_black.png')}}" height="50" width="50" alt="">
                         </div>
                         <a href="#"><h4>PHOTOGRAPHY</h4></a>
-                        <p>Dengan tenaga kerja yang profesional, semuabisa art dipecaya dapat membuat banyak jenis video yang diinginkan oleh client mulai dari wedding, pre-wedding, iklan, film dsb.</p>
+                        <p>Kami membuat konten photography mulai dari pemotretan untuk wedding, pre wedding, dokumentasi acara, food photo, product photo.
+company profile, traveling photo dan masih banyak lagi.</p>
                         <a class="view_btn" href="#">Read Details</a>
                     </div>
                 </div>
@@ -265,8 +267,9 @@
                             <img src="{{asset('img/SB_code.png')}}" height="50" width="50" alt="">
                             <img src="{{asset('img/SB_code_black.png')}}" height="50" width="50" alt="">
                         </div>
-                        <a href="#"><h4>PROGRAM</h4></h4></a>
-                        <p>Dengan tenaga kerja yang profesional, semuabisa art dipecaya dapat membuat banyak jenis video yang diinginkan oleh client mulai dari wedding, pre-wedding, iklan, film dsb.</p>
+                        <a href="#"><h4>WEBSITE</h4></h4></a>
+                        <p>Dengan dukungan tenaga yang profesional dan berperngalaman di bidangnya, kami akan terus berusaha untuk memenuhi segala kebutuhan 
+Teknologi Informasi yang dibutuhkan oleh para .....</p>
                         <a class="view_btn" href="#">Read Details</a>
                     </div>
                 </div>
@@ -277,7 +280,8 @@
                             <img src="{{asset('img/SB_desain_black.png')}}" height="50" width="50" alt="">
                         </div>
                         <a href="#"><h4>DESIGN</h4></a>
-                        <p>Dengan tenaga kerja yang profesional, semuabisa art dipecaya dapat membuat banyak jenis video yang diinginkan oleh client mulai dari wedding, pre-wedding, iklan, film dsb.</p>
+                        <p>Kami menyediakan jasa design mulai dari design logo, design untuk banner, x banner, menu makanan, desain kemasan, 
+                           baju dan masih banyak lagi, percayakan pada kami!</p>
                         <a class="view_btn" href="#">Read Details</a>
                     </div>
                 </div>
@@ -289,9 +293,10 @@
                     <h2>our <br class="title_br" /> <span style="color:red;">service</span></h2>
                     <h6 style="color:red;">Provide your art solution <br class="sub_br" /> Company</h6>
                 </div>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis.</p>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                <p>Kami menyediakan 4 macam layanan dalam bidang digital marketing yang bisa anda pergunakan 
+                untuk kebutuhan anda yaitu videography, photography, website dan desain. Dengan seluruh tenaga yang profesional kami telah dipercaya oleh banyak client
+                untuk membuat konten yang mereka inginkan, dengan motto kami yaitu creativity dan reliability kami menjanjikan
+                sebuah karya yang menarik dan tenaga yang bisa di andalkan oleh seluruh client.</p>
                 <div class="border_bar"></div>
             </div>
         </div>

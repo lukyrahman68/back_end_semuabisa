@@ -47,7 +47,7 @@ class testimoniController extends Controller
             
             $image = $request->file('gambar');
             $ext = $image->guessClientExtension();
-            $img = $project->id.'.'.$ext;
+            $img = $testimoni->id.'.'.$ext;
             $image->move(public_path('testimoni'),$img);
 
 			return redirect()->route('testimoni.index')->with('sukses','testimoni berhasil ditambahkan');

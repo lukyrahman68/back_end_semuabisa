@@ -50,15 +50,40 @@ Route::get('/page/home', function () {
 });
 Route::get('/page/project', function () {
     $data="project";
+    $sub_data="photo";
     $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
                 ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
                 ->get();
-    return view('frontend.project',compact('data','projeks'));
+    return view('frontend.project',compact('data','projeks','sub_data'));
+});
+Route::get('/page/project/video', function () {
+    $data="project";
+    $sub_data="video";
+    $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
+                ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
+                ->get();
+    return view('frontend.project',compact('data','projeks','sub_data'));
+});
+Route::get('/page/project/website', function () {
+    $data="project";
+    $sub_data="website";
+    $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
+                ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
+                ->get();
+    return view('frontend.project',compact('data','projeks','sub_data'));
+});
+Route::get('/page/project/desain', function () {
+    $data="project";
+    $sub_data="desain";
+    $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
+                ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
+                ->get();
+    return view('frontend.project',compact('data','projeks','sub_data'));
 });
 Route::get('/page/services', function () {
     $data="services";
     return view('frontend.our_service',compact('data'));
-});
+})->name('services');;
 Route::get('/page/blog', function () {
     $data="blog";
     $artikels = artikel::all();

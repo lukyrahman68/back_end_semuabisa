@@ -118,13 +118,72 @@
     <!--================End Main Slider Area =================-->
     <section class="our_project_area">
         <div class="container">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                    <img src="{{asset('img/about/Our_Company.png')}}" alt="" srcset="" style="max-width:100%;">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                        <img src="{{asset('img/about/Our_Company.png')}}" alt="" srcset="" style="max-width:100%;">
+                </div>
+                <div class="col-md-4"></div>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-12">
+                <span style="font-size: 30px">
+                    History Of<br>
+                    <b>SEMUABISA.ART</b>
+                </span><br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
+                </p>
+            </div>
         </div>
     </section>
+    <section>
+        <div class="col-md-12" style="position: relative">
+            <img src="{{asset('img/about/Photo 2.jpg')}}"  srcset="" style="max-width:100%;height: 250px;min-width:100%;object-fit: cover">
+        </div><br><br><br><br>
+        <div class="row" style="position: absolute;">
+                <div class="col-md-6"></div>
+                <div class="col-md-3">
+                    <img src="{{asset('img/about/Our Prespective.png')}}" alt="" srcset="" style="max-width:50%;">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+    </section>
+    <section>
+        <div class="container" >
+            <div class="col-md-12" style="padding-top: 3em;">
+                    <img src="{{asset('img/about/Visi Misi.png')}}" alt="" srcset="" style="max-width:100%;">
+            </div>
+            <div class="col-md-12" style="background-color: #eee">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4" style="text-align: center">
+                        <img src="{{asset('img/about/Our Team.png')}}" alt="" srcset="" style="max-width:100%;max-height: 100px;">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda deleniti delectus veritatis eos autem? Sint iusto quidem commodi, culpa in sed dignissimos. Quod repellendus enim aliquid quis consequatur officia.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda deleniti delectus veritatis eos autem? Sint iusto quidem commodi, culpa in sed dignissimos. Quod repellendus enim aliquid quis consequatur officia.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda deleniti delectus veritatis eos autem? Sint iusto quidem commodi, culpa in sed dignissimos. Quod repellendus enim aliquid quis consequatur officia.
+                        </p>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                        <br><br>
+                        <img src="{{asset('img/about/Photo Team.png')}}" alt="" srcset="" style="max-width:100%;">
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </section>
+    <br><br>
 
     <!--================Testimonials Area =================-->
     <section class="testimonials_area">

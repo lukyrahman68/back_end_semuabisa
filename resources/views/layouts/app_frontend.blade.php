@@ -110,7 +110,7 @@
                                 @if($data=='services')
                                     active
                                 @endif
-                                "><a href="services">Services</a></li>
+                                "><a href="{{route('services')}}">Services</a></li>
                                 <li><a href="about">about us</a></li>
                                 <li class="
                                 @if($data=='blog')

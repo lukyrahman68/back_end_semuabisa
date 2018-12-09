@@ -29,7 +29,7 @@
                   <form action="{{ route('testimoni.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar" multiple>
+                      <input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">
                     </div>
                     <div class="form-group">
                       <input type="text" class="form-control" name="nama" placeholder="Nama">

@@ -111,6 +111,11 @@
                                     active
                                 @endif
                                 "><a href="{{route('services')}}">Services</a></li>
+                                <li class="
+                                @if($data=='price_list')
+                                    active
+                                @endif
+                                "><a href="{{route('price_list_photo')}}">Price List</a></li>
                                 <li><a href="about">about us</a></li>
                                 <li class="
                                 @if($data=='blog')
@@ -125,47 +130,6 @@
             </div>
         </header>
         @yield('content')
-        <!--================Address Area =================-->
-        <section class="address_area">
-            <div class="container">
-                <div class="row address_inner">
-                    <div class="col-md-4">
-                        <div class="media">
-                            <div class="media-left">
-                                <img src="{{asset('img/icon/place-icon.png')}}" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h4>Office Address :</h4>
-                                <h5>1234 Cafficic, California, USA</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media">
-                            <div class="media-left">
-                                <img src="{{asset('img/icon/phone-icon.png')}}" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h5>(012) 3456789</h5>
-                                <h5>(012) 3456789</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media">
-                            <div class="media-left">
-                                <img src="{{asset('img/icon/inbox-icon.png')}}" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h5>info@domain.com</h5>
-                                <h5>info@domain.com</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--================End Address Area =================-->
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -177,10 +141,10 @@
                                 <center><img  src="{{asset('img/logo/logo putih.png')}}" alt="" width="150" height="150" style="object-fit: contain;"></center>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium. ed quia consequuntur magni dolores eos qui ratione.</p>
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                                 </ul>
                             </aside>
                         </div>

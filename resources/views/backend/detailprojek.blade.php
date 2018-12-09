@@ -28,6 +28,10 @@
               @endif
                   
                     <div class="form-group">
+                    @foreach($media as $media)
+                    <img src="{{asset('project')}}/{{$media->idkonten}}-{{$media->idmedia}}.{{$media->format}}" height="400" weight="400">
+                    @endforeach
+                    <br>
                     <strong>Judul:</strong>
                         {{ $projek->nama }}
                     </div>

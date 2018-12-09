@@ -373,34 +373,16 @@
                 <div class="col-md-8">
                     <div class="testimonials_slider owl-carousel">
                         <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
+                            @foreach ($testimonis as $testimoni)
+                                <div class="testi_left">
+                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                    <p>{!!$testimoni->testimoni!!}</p>
+                                    <a href="#"><h4>{{$testimoni->nama}}</h4></a>
+                                </div>
+                                <div class="testi_right">
+                                    <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

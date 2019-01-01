@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMail;
 
 class HomeController extends Controller
 {
@@ -24,5 +26,14 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+    public function mail(request $request)
+    {
+    $nama = $request->nama;
+    $email = $request->email;
+    $pesan = $request->pesan;
+    Mail::to('semuabisa.art@gmail.com')->send(new SendMail($nama,$email,$pesan));
+
+    return redirect()->route('contact_us');
     }
 }

@@ -35,7 +35,7 @@
                 </li>
                 <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home-slider/slider-1.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home-slider/slider-2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/home_img2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box2">
                         <div class="tp-caption first_text"
@@ -98,7 +98,7 @@
                 </li>
                 <li data-index="rs-2974" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/home_img3.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box">
                         <div class="tp-caption first_text"
@@ -176,27 +176,55 @@
             <div class="row" style="margin-bottom: 3em;">
 
                 <div class="col-md-5">
-                    <img src="{{asset('img/service/sb.png')}}" alt="" style="max-height: 100%;max-width:100%">
+                    <img src="{{asset('img/service/PREWED.jpg')}}" alt="" style="max-height: 100%;max-width:100%">
                 </div>
                 <div class="col-md-7">
-                    <span style="font-weight: bold;font-size: 30px">VIDEOGRAPHY</span>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
+                        <span style="font-weight: bold;font-size: 30px">Pre-Wedding</span><br>
+                        <p style="text-align: justify">Selama apapun sebuah hubungan, jangan pernah berhenti untuk membuat moment baik untuk dikenang.
+                        Rasa bosan itu lumrah, akan ada kalanya rasa seperti itu muncul.
+                        Karenanya, selalu mencarilah cara baru untuk menjalani hidup berdua dengan semangat yang sama seperti pertama kalinya.
+                        Jadikanlah pasanganmu tempat untuk berlabuh dan membagi semua momen dalam hidup
+                        dan</p><br>
+                        <q style="font-weight: bold;font-size: 16px">Jadikanlah kami sebagai tempatmu untuk mengabadikan semua moment bahagia sebelum pernikahan.</q>
                 </div>
             </div>
             <div class="row" style="margin-bottom: 3em;">
                 <div class="col-md-7">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat voluptatem aut hic? Blanditiis corrupti rerum nisi, perspiciatis mollitia culpa? Velit similique neque nihil tenetur iusto enim maxime veniam nemo!
+                    <span style="font-weight: bold;font-size: 30px">Wedding</span><br>
+                    <p style="text-align: justify">Setiap moment, apalagi itu adalah sebuah pernikahan, rasanya tidaklah lengkap tanpa ada foto dan video didalamnya.
+                    Semua orang pasti membutuhkannya untuk bisa mengingat kembali moment bahagia yang pernah dilalui.
+                    Foto dan video adalah suatu hal paling sederhana dalam mengingat kenangan, karena ia bersifat abadi.
+                    Meskipun waktu bisa merubah semua yang dilalui, adalah foto dan video yang akan selalu bisa bertahan melawan waktu
+                    sekalipun ia telah usang, tetap saja ia menyimpan keabadian.</p><br>
+                    <q style="font-weight: bold;font-size: 16px">Bersama kami, mari jadikan hari istimewa anda abadi sepanjang masa.</q>
                 </div>
                 <div class="col-md-5">
-                    <img src="{{asset('img/service/sb.png')}}" alt="" style="max-height: 100%;max-width:100%">
+                    <img src="{{asset('img/service/WEDDING.jpg')}}" alt="" style="max-height: 100%;max-width:100%">
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 3em;">
+                <div class="col-md-5">
+                    <img src="{{asset('img/service/Dokumentasi.jpg')}}" alt="" style="max-height: 100%;max-width:100%">
+                </div>
+                <div class="col-md-7">
+                    <span style="font-weight: bold;font-size: 30px">Dokumentasi</span><br>
+                    <p style="text-align: justify">Sudah menjadi rahasia umum bahwa mendokumentasikan sebuah moment adalah sesuatu yang harus dilakukan, ini karena manusia diciptakan dengan ingatan yang maha terbatas
+                    sehingga dokumen berupa foto dan video bisa membantu untuk mengingat moment. Kami hadir dengan salah satu layanan untuk mendokumentasikan secara spesifik moment anda.
+                    </p><br>
+                    <q style="font-weight: bold;font-size: 16px">Kami hadir dengan cinta, untuk membantu anda mencintai semua peristiwa bahagia</q>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 3em;">
+                <div class="col-md-7">
+                    <span style="font-weight: bold;font-size: 30px">Branding</span><br>
+                    <p style="text-align: justify">Di masa ini, ada banyak sekali cara untuk memperkenalkan produk anda pada semua orang.
+                            Dengan memanfaatkan teknologi yang ada, dunia harus mengetahui eksistensi brand anda dalam bentuk foto dan video branding paling baik dari yang anda sanggup bayangkan.
+                            Untuk itulah kami hadir menjadi fasilitas dalam mewujudkan mimpi anda membawa brand pada dunia.
+                            </p><br>
+                    <q style="font-weight: bold;font-size: 16px">Kami akan memastikan semua strategi bisnis anda terkemas dengan benar melalui foto dan video</q>
+                </div>
+                <div class="col-md-5">
+                    <img src="{{asset('img/service/Branding.jpg')}}" alt="" style="max-height: 100%;max-width:100%;object-fit: cover">
                 </div>
             </div>
         </div>

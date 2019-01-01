@@ -7,7 +7,7 @@
 
         <link rel="icon" href="{{asset('img/fav-icon.png')}}" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Construction - WeBuilder Template</title>
+        <title>Semua Bisa Art</title>
 
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/libs.css')}}">
@@ -85,7 +85,7 @@
                 <div class="container">
                     <nav class="navbar navbar-default">
                         <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
+                        <div class="navbar-header" style="padding-bottom: 2em;">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
@@ -107,7 +107,7 @@
                                 @if($data=='project')
                                     active
                                 @endif
-                                "><a href="{{route('photo')}}">Project</a></li>
+                                "><a href="{{route('pre-wedding')}}">Project</a></li>
                                 <li class="
                                 @if($data=='services')
                                     active
@@ -117,18 +117,22 @@
                                 @if($data=='price_list')
                                     active
                                 @endif
-                                "><a href="{{route('price_list_photo')}}">Price List</a></li>
+                                "><a href="{{route('pl_pre-wedding')}}">Price List</a></li>
                                 <li class="
                                 @if($data=='about')
                                     active
                                 @endif
                                 "><a href="{{route('about')}}">about us</a></li>
                                 <li class="
+                                @if($data=='contact_us')
+                                    active
+                                @endif
+                                "><a href="{{route('contact_us')}}">Contact</a></li>
+                                {{-- <li class="
                                 @if($data=='blog')
                                     active
                                 @endif "><a href="blog">blog</a></li>
-                                <li><a href="detail_projek">Detail_project(tes)</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="detail_projek">Detail_project(tes)</a></li> --}}
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </nav>
@@ -145,7 +149,7 @@
                         <div class="col-md-3 col-sm-6">
                             <aside class="f_widget about_widget">
                                 <center><img  src="{{asset('img/logo/logo putih.png')}}" alt="" width="150" height="150" style="object-fit: contain;"></center>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium. ed quia consequuntur magni dolores eos qui ratione.</p>
+                                <p>Cara paling sederhana untuk mengingat kenangan adalah menjadikannya abadi</p>
                                 <ul>
                                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -157,7 +161,7 @@
                         <div class="col-md-3 col-sm-6">
                             <aside class="f_widget recent_widget">
                                 <div class="f_w_title">
-                                    <h3>Recent Posts</h3>
+                                    <h3 style="color: #fff !important">Recent Posts</h3>
                                 </div>
                                 <div class="recent_w_inner">
                                     <div class="media">
@@ -182,7 +186,7 @@
                         <div class="col-md-3 col-sm-6">
                             <aside class="f_widget address_widget">
                                 <div class="f_w_title">
-                                    <h3>Office Address</h3>
+                                    <h3 style="color: #fff !important">Office Address</h3>
                                 </div>
                                 <div class="address_w_inner">
                                     <div class="media">
@@ -215,10 +219,8 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <aside class="f_widget give_us_widget">
-                                <h5>Give Us A Call</h5>
-                                <h4>(012) 3456789</h4>
-                                <h5>or</h5>
-                                <a class="get_bg_btn" href="#">GET A QUOTE</a>
+                                <h5  style="color: #fff !important">Give Us A Call</h5>
+                                <h4 style="color: #fff !important">(012) 3456789</h4>
                             </aside>
                         </div>
                     </div>

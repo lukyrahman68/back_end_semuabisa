@@ -35,7 +35,7 @@
                 </li>
                 <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home-slider/slider-1.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home-slider/slider-2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/home_img2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box2">
                         <div class="tp-caption first_text"
@@ -98,7 +98,7 @@
                 </li>
                 <li data-index="rs-2974" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/home_img3.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box">
                         <div class="tp-caption first_text"
@@ -171,48 +171,48 @@
                     <h6><span style="color:black">Provide Your Art Solution</span></h6><br>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                       <label class="btn btn-primary
-                        @if($sub_data=="photo")
+                        @if($sub_data=="pre-wedding")
                             active
                         @endif
-                      " onclick="location.href='{{route("photo")}}'">
+                      " onclick="location.href='{{route("pre-wedding")}}'">
                         <input type="radio" name="options" id="option1" autocomplete="off"
-                        @if($sub_data=="photo")
+                        @if($sub_data=="pre-wedding")
                             checked
                         @endif
-                        > Photo
+                        > Pre-Wedding
                       </label>
                       <label class="btn btn-primary
-                        @if($sub_data=="video")
+                        @if($sub_data=="wedding")
                             active
                         @endif
-                      " onclick="location.href='{{route("video")}}'">
+                      " onclick="location.href='{{route("wedding")}}'">
                         <input type="radio" name="options" id="option2" autocomplete="off"
-                        @if($sub_data=="video")
+                        @if($sub_data=="wedding")
                             checked
                         @endif
-                        > Video
+                        > Wedding
                       </label>
                       <label class="btn btn-primary
-                        @if($sub_data=="website")
+                        @if($sub_data=="dokumentasi")
                             active
                         @endif
-                      " onclick="location.href='{{route("website")}}'">
+                      " onclick="location.href='{{route("dokumentasi")}}'">
                         <input type="radio" name="options" id="option3" autocomplete="off"
-                        @if($sub_data=="website")
+                        @if($sub_data=="dokumentasi")
                             checked
                         @endif
-                        > Website
+                        > Dokumentasi
                       </label>
                       <label class="btn btn-primary
-                        @if($sub_data=="desain")
+                        @if($sub_data=="branding")
                             active
                         @endif
-                      " onclick="location.href='{{route("desain")}}'">
+                      " onclick="location.href='{{route("branding")}}'">
                         <input type="radio" name="options" id="option3" autocomplete="off"
-                        @if($sub_data=="desain")
+                        @if($sub_data=="branding")
                             checked
                         @endif
-                        > Desain
+                        > Branding
                       </label><br><br>
                     </div>
                     {{-- <ul class="nav nav-tabs our_project_filter">
@@ -229,7 +229,7 @@
                                     </div>
                                     <div class="col-md-9">
                                         <div class="our_project_details">
-                                            @foreach ( $projeks as $projek)
+                                            @foreach ( $projeks->unique('id') as $projek)
                                             <div class="project_item {{$projek->kategori}} isolation tiling hitam_putih">
                                                 <img src="{{asset('project/'.$projek->id.'-'.$projek->idmedia.'.'.$projek->format)}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
                                                 <div class="project_hover">

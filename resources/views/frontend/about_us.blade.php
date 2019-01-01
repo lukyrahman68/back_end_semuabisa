@@ -125,19 +125,17 @@
                 </div>
                 <div class="col-md-4"></div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
                 <span style="font-size: 30px">
-                    History Of<br>
-                    <b>SEMUABISA.ART</b>
+                    <p style="margin-bottom:-40px">
+                        History Of<br>
+                        <b>SEMUABISA ART</b>
+                    </p>
                 </span><br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia? Aliquam, debitis. Sunt ipsum quidem nihil et, beatae expedita cum neque blanditiis eius vel eveniet, totam, qui ad magni vitae.
+                <p style="text-align: justify">
+                    Kami terlahir dari kesadaran dalam diri tentang berharganya sebuah kenangan bahagia. Bagi kami, foto dan video akan selalu menjadi kebutuhan semua orang
+                    untuk menunjukkan perasaan, untuk mengingat kenangan, untuk berbagi kabar dan tentunya untuk mengabadikan kenangan. Selain itu foto dan video juga berperan penting dalam strategi branding sebuah produk, sudah menjadi rahasia umum bahwa sebuah produk tidak bisa lepas dari foto dan video agar dikenal dunia.
+                    Karena itulah pada tahun <b>2017</b> kami terlahir saat Tuhan sedang tersenyum. Menjadi salah satu vendor foto dan video yang lahir dan tumbuh di tengah masyarakat Surabaya, menjadikan kami berpengalaman untuk membuat semua moment anda istimewa.
                 </p>
             </div>
         </div>
@@ -165,9 +163,9 @@
                     <div class="col-md-4" style="text-align: center">
                         <img src="{{asset('img/about/Our Team.png')}}" alt="" srcset="" style="max-width:100%;max-height: 100px;">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda deleniti delectus veritatis eos autem? Sint iusto quidem commodi, culpa in sed dignissimos. Quod repellendus enim aliquid quis consequatur officia.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda deleniti delectus veritatis eos autem? Sint iusto quidem commodi, culpa in sed dignissimos. Quod repellendus enim aliquid quis consequatur officia.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda deleniti delectus veritatis eos autem? Sint iusto quidem commodi, culpa in sed dignissimos. Quod repellendus enim aliquid quis consequatur officia.
+                            Kami memiliki orang-orang baik yang memiliki kemampuan khusus dalam menyediakan dokumentasi foto dan video terbaik untuk anda.
+Kami selalu percaya dengan menjadi pendengar yang baik bisa membuat kami lebih memahami client dan mengerti kebutuhan mereka.
+Dengan pelayanan sepenuh hati, membuat kami bisa menjaga kepercayaan client karena bagi kami, kepuasan client adalah yang paling utama.
                         </p>
                     </div>
                     <div class="col-md-4"></div>

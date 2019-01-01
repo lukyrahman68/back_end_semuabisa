@@ -55,40 +55,40 @@ Route::get('/page/home', function () {
 })->name('daboard_home');
 Route::get('/page/project', function () {
     $data="project";
-    $sub_data="photo";
+    $sub_data="pre-wedding";
     $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
                 ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
-                ->where('projeks.kategori', 'Photo')
+                ->where('projeks.kategori', 'Pre-Wedding')
                 ->get();
     return view('frontend.project',compact('data','projeks','sub_data'));
-})->name('photo');
-Route::get('/page/project/video', function () {
+})->name('pre-wedding');
+Route::get('/page/project/wedding', function () {
     $data="project";
-    $sub_data="video";
+    $sub_data="wedding";
     $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
                 ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
-                ->where('projeks.kategori', 'Video')
+                ->where('projeks.kategori', 'Wedding')
                 ->get();
     return view('frontend.project',compact('data','projeks','sub_data'));
-})->name('video');
-Route::get('/page/project/website', function () {
+})->name('wedding');
+Route::get('/page/project/dokumentasi', function () {
     $data="project";
-    $sub_data="website";
+    $sub_data="dokumentasi";
     $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
                 ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
-                ->where('projeks.kategori', 'Website')
+                ->where('projeks.kategori', 'Dokumentasi')
                 ->get();
     return view('frontend.project',compact('data','projeks','sub_data'));
-})->name('website');
-Route::get('/page/project/desain', function () {
+})->name('dokumentasi');
+Route::get('/page/project/branding', function () {
     $data="project";
-    $sub_data="desain";
+    $sub_data="branding";
     $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')
                 ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
-                ->where('projeks.kategori', 'Desain')
+                ->where('projeks.kategori', 'Branding')
                 ->get();
     return view('frontend.project',compact('data','projeks','sub_data'));
-})->name('desain');
+})->name('branding');
 
 Route::get('/page/services', function () {
     $data="services";
@@ -97,31 +97,31 @@ Route::get('/page/services', function () {
 
 Route::get('/page/price_list', function () {
     $data="price_list";
-    $sub_data="photo";
-    $pricelists = pricelist::where('kategori','Photo')->get();
+    $sub_data="pre-wedding";
+    $pricelists = pricelist::where('kategori','Pre-Wedding')->get();
     return view('frontend.price_list',compact('data','pricelists','sub_data'));
-})->name('price_list_photo');
+})->name('pl_pre-wedding');
 
-Route::get('/page/price_list/video', function () {
+Route::get('/page/price_list/wedding', function () {
     $data="price_list";
-    $sub_data="video";
-    $pricelists = pricelist::where('kategori','Video')->get();
+    $sub_data="wedding";
+    $pricelists = pricelist::where('kategori','Wedding')->get();
     return view('frontend.price_list',compact('data','pricelists','sub_data'));
-})->name('price_list_video');
+})->name('pl_wedding');
 
-Route::get('/page/price_list/website', function () {
+Route::get('/page/price_list/dokumentasi', function () {
     $data="price_list";
-    $sub_data="website";
-    $pricelists = pricelist::where('kategori','Website')->get();
+    $sub_data="dokumentasi";
+    $pricelists = pricelist::where('kategori','Dokumentasi')->get();
     return view('frontend.price_list',compact('data','pricelists','sub_data'));
-})->name('price_list_website');
+})->name('pl_dokumentasi');
 
-Route::get('/page/price_list/desain', function () {
+Route::get('/page/price_list/branding', function () {
     $data="price_list";
-    $sub_data="desain";
-    $pricelists = pricelist::where('kategori','desain')->get();
+    $sub_data="branding";
+    $pricelists = pricelist::where('kategori','Branding')->get();
     return view('frontend.price_list',compact('data','pricelists','sub_data'));
-})->name('price_list_desain');
+})->name('pl_branding');
 
 Route::get('/page/blog', function () {
     $data="blog";
@@ -133,7 +133,7 @@ Route::get('/page/about', function () {
     return view('frontend.about_us',compact('data'));
 })->name('about');
 Route::get('/page/detail_projek/{id}', function ($id) {
-    $data="about";
+    $data="project";
     $projek = projek::join('media','projeks.id', '=', 'media.idkonten')
                 ->select('projeks.*','media.idmedia','media.format','media.kategori as kategoriM')
                 ->where('projeks.id',$id)
@@ -141,8 +141,13 @@ Route::get('/page/detail_projek/{id}', function ($id) {
     $links = link::where('idkonten',$id)->get();
     return view('frontend.detail_projek',compact('data','projek','links'));
 })->name('detail_projek');
+Route::get('/page/contact_us', function () {
+    $data="contact_us";
+    return view('frontend.contact_us',compact('data'));
+})->name('contact_us');
 
 
 
 Route::get('/home', 'HomeController@index')->name('home');
 //-----------------/frontend---------------------
+Route::get('/send/email', 'HomeController@mail')->name('mail');

@@ -35,7 +35,7 @@
                 </li>
                 <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home-slider/slider-1.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home-slider/slider-2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/home_img2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box2">
                         <div class="tp-caption first_text"
@@ -98,7 +98,7 @@
                 </li>
                 <li data-index="rs-2974" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/home_img3.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box">
                         <div class="tp-caption first_text"
@@ -170,50 +170,50 @@
                     <h2> <span style="color:red">Our</span> <br class="title_br"><span style="color:black">Project</span></h2>
                     <h6><span style="color:black">Provide Your Art Solution</span></h6><br>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons" style="max-width:400px;">
-                      <label class="btn btn-primary
-                        @if($sub_data=="photo")
-                            active
-                        @endif
-                      " onclick="location.href='{{route("price_list_photo")}}'">
-                        <input type="radio" name="options" id="option1" autocomplete="off"
-                        @if($sub_data=="photo")
-                            checked
-                        @endif
-                        > Photo
-                      </label>
-                      <label class="btn btn-primary
-                        @if($sub_data=="video")
-                            active
-                        @endif
-                      " onclick="location.href='{{route("price_list_video")}}'">
-                        <input type="radio" name="options" id="option2" autocomplete="off"
-                        @if($sub_data=="video")
-                            checked
-                        @endif
-                        > Video
-                      </label>
-                      <label class="btn btn-primary
-                        @if($sub_data=="website")
-                            active
-                        @endif
-                      " onclick="location.href='{{route("price_list_website")}}'">
-                        <input type="radio" name="options" id="option3" autocomplete="off"
-                        @if($sub_data=="website")
-                            checked
-                        @endif
-                        > Website
-                      </label>
-                      <label class="btn btn-primary
-                        @if($sub_data=="desain")
-                            active
-                        @endif
-                      " onclick="location.href='{{route("price_list_desain")}}'">
-                        <input type="radio" name="options" id="option3" autocomplete="off"
-                        @if($sub_data=="desain")
-                            checked
-                        @endif
-                        > Desain
-                      </label><br><br>
+                            <label class="btn btn-primary
+                            @if($sub_data=="pre-wedding")
+                                active
+                            @endif
+                          " onclick="location.href='{{route("pl_pre-wedding")}}'">
+                            <input type="radio" name="options" id="option1" autocomplete="off"
+                            @if($sub_data=="pre-wedding")
+                                checked
+                            @endif
+                            > Pre-Wedding
+                          </label>
+                          <label class="btn btn-primary
+                            @if($sub_data=="wedding")
+                                active
+                            @endif
+                          " onclick="location.href='{{route("pl_wedding")}}'">
+                            <input type="radio" name="options" id="option2" autocomplete="off"
+                            @if($sub_data=="wedding")
+                                checked
+                            @endif
+                            > Wedding
+                          </label>
+                          <label class="btn btn-primary
+                            @if($sub_data=="dokumentasi")
+                                active
+                            @endif
+                          " onclick="location.href='{{route("pl_dokumentasi")}}'">
+                            <input type="radio" name="options" id="option3" autocomplete="off"
+                            @if($sub_data=="dokumentasi")
+                                checked
+                            @endif
+                            > Dokumentasi
+                          </label>
+                          <label class="btn btn-primary
+                            @if($sub_data=="branding")
+                                active
+                            @endif
+                          " onclick="location.href='{{route("pl_branding")}}'">
+                            <input type="radio" name="options" id="option3" autocomplete="off"
+                            @if($sub_data=="branding")
+                                checked
+                            @endif
+                            > Branding
+                          </label><br><br>
                     </div>
                     {{-- <ul class="nav nav-tabs our_project_filter">
                         <li class="active" data-filter="*"><a href="#">All</a></li>

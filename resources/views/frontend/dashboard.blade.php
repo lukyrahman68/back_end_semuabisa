@@ -10,7 +10,7 @@
                     <img src="{{asset('img/home_img.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box">
-                        <div class="tp-caption first_text"
+                        <div class="tp-caption first_text respon1"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
@@ -48,7 +48,7 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"><span>SEMUABISA</span> <span class="art">ART</span></div>
 
-                        <div class="tp-caption secand_text"
+                        <div class="tp-caption secand_text respon2"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
@@ -70,7 +70,7 @@
                 </li>
                 <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home-slider/slider-1.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home-slider/slider-2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/home_img2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box2">
                         <div class="tp-caption first_text"
@@ -133,7 +133,7 @@
                 </li>
                 <li data-index="rs-2974" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/home_img3.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box">
                         <div class="tp-caption first_text"
@@ -225,12 +225,24 @@
             </div>
         </div>
         <div class="container padding_vh">
-            <div class="col-md-12 border_vh col-xs-12 col-sm-12" style="margin: 0;margin-bottom: 1em;">
-                    Halloo ! Perkenalkan, kami adalah sebuah instansi yang bergerak di bidang jasa pemotretan dan pengambilan
-                    video untuk wilayah surabaya dan sekitarnya, dengan seluruh anggota yang profesional, kami telah dipercaya oleh banyak
-                    client untuk membuat content foto, video, website dan desain sesuai kebutuhan mereka yang dijamin memuaskan (bukan abal2 yang penting jadi)
-                    Jangan sampai karena perbedaan harga yang tipis membuat anda menyesal karena perbedaan kualitas yang terlampau jauh ....
-                    Jadi jangan sampai pilih vendor ! Yuk segera tentukan paketmu dan segera hubungi kami !
+            <div class="row" style="margin: 0;margin-bottom: 1em;">
+                <div class="col-md-6 col-xs-12" style="text-align: justify">
+                    <p style="text-indent: 40px;">Manusia diciptakan dengan ingatan yang serba terbatas, meskipun beberapa moment bahagia bisa saja melekat kuat diingatan
+                    namun tetap saja dibutuhkan sebuah media yang bersifat seperti mesin waktu yang kapanpun bisa membawa kita kembali pada kenangan itu.
+                    Karena itulah kami ada untuk membantu semuanya dalam mengingat kenangan terbaik melalui <b>FOTO</b> dan <b>VIDEO</b>
+                    hingga pada saatnya nanti di waktu yang lain, ketika kita melihatnya kembali
+                    dapat membawa kita kemasa itu, untuk merasakan kembali semua rasa bahagia yang pernah dirasakan.  </p>
+                    <p style="text-indent: 40px;">
+                    Kami juga menyadari, sebuah foto dan video selain bisa menjadi mesin waktu, juga bisa menjadi sesuatu yang menjual.
+                    sudah bukan rahasia lagi bahwa strategi pemasaran yang paling optimal adalah dengan memanfaatkan media sebagai bahan promosi. </p>
+                    <p style="text-indent: 40px;">Untuk itulah kami ada membantu mewujudkan impian anda.
+                    Percayakan Seluruh dokumen anda kepada kami. Dengan seluruh <i> crew </i> yang berpengalaman dan ahli dibidangnya
+                    kami menjamin semua moment anda dapat terbingkai sempurna, indah dan semestinya.
+                    karena setiap moment bahagia sudah seharusnya mendapatkan tempat paling istimewa dalam kenangan kita.</p>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="{{asset('img/Kolase.png')}}" alt="" style="max-width: 100%;max-height: 100%">
+                </div>
             </div>
         </div>
     </section>
@@ -247,9 +259,9 @@
                             <img src="{{asset('img/SB_movie.png')}}" height="50" width="50" alt="">
                             <img src="{{asset('img/SB_movie_black.png')}}" height="50" width="50" alt="">
                         </div>
-                        <a href="#"><h4>VIDEOGRAPHY</h4></a>
-                        <p>Kami membuat konten cinematic videography mulai dari pembuatan video wedding, pre wedding, dokumentasi acara seminar, dokumentasi acara musik,
-film pendek, company profile, traveling video dan masih banyak lagi.</p>
+                        <a href="#"><h4>Pre-Wedding</h4></a>
+                        <p>Selama apapun sebuah hubungan, jangan pernah berhenti untuk membuat moment baik untuk dikenang
+                            dan jadikanlah kami sebagai tempatmu untuk mengabadikan semua moment bahagia sebelum pernikahan.</p>
                         <a class="view_btn" href="#">Read Details</a>
                     </div>
                 </div>
@@ -259,33 +271,34 @@ film pendek, company profile, traveling video dan masih banyak lagi.</p>
                             <img src="{{asset('img/SB_camera.png')}}" height="50" width="50" alt="">
                             <img src="{{asset('img/SB_camera_black.png')}}" height="50" width="50" alt="">
                         </div>
-                        <a href="#"><h4>PHOTOGRAPHY</h4></a>
-                        <p>Kami membuat konten photography mulai dari pemotretan untuk wedding, pre wedding, dokumentasi acara, food photo, product photo.
-company profile, traveling photo dan masih banyak lagi.</p>
+                        <a href="#"><h4>Wedding</h4></a>
+                        <p>Sebuah pernikahan, rasanya tidaklah lengkap tanpa ada foto dan video didalamnya.
+                            Karena cara paling baik untuk mengingat kenangan adalah menjadikannya abadi.
+                        Bersama kami mari abadikan kenangan anda</p>
                         <a class="view_btn" href="#">Read Details</a>
                     </div>
                 </div>
                 <div class="service_item">
                     <div class="service_item_inner">
                         <div class="service_icon">
-                            <img src="{{asset('img/SB_code.png')}}" height="50" width="50" alt="">
-                            <img src="{{asset('img/SB_code_black.png')}}" height="50" width="50" alt="">
+                            <img src="{{asset('img/SB_camera1.png')}}" height="50" width="50" alt="">
+                            <img src="{{asset('img/SB_camera_black1.png')}}" height="50" width="50" alt="">
                         </div>
-                        <a href="#"><h4>WEBSITE</h4></h4></a>
-                        <p>Dengan dukungan tenaga yang profesional dan berperngalaman di bidangnya, kami akan terus berusaha untuk memenuhi segala kebutuhan 
-Teknologi Informasi yang dibutuhkan oleh para .....</p>
+                        <a href="#"><h4>Dokumentasi</h4></a>
+                        <p>Sudah menjadi rahasia umum bahwa mendokumentasikan sebuah moment adalah sesuatu yang harus dilakukan.
+                            Bersama kami mari dokumentasikan semua peristiwa bahagia</p>
                         <a class="view_btn" href="#">Read Details</a>
                     </div>
                 </div>
                 <div class="service_item">
                     <div class="service_item_inner">
                         <div class="service_icon">
-                            <img src="{{asset('img/SB_desain.png')}}" height="50" width="50" alt="">
-                            <img src="{{asset('img/SB_desain_black.png')}}" height="50" width="50" alt="">
+                            <img src="{{asset('img/SB_camera2.png')}}" height="50" width="50" alt="">
+                            <img src="{{asset('img/SB_camera_black2 .png')}}" height="50" width="50" alt="">
                         </div>
-                        <a href="#"><h4>DESIGN</h4></a>
-                        <p>Kami menyediakan jasa design mulai dari design logo, design untuk banner, x banner, menu makanan, desain kemasan, 
-                           baju dan masih banyak lagi, percayakan pada kami!</p>
+                        <a href="#"><h4>Branding</h4></a>
+                        <p>Banyak cara memperkenalkan produk anda pada semua orang dengan memanfaatkan teknologi.
+                            Kami akan memastikan strategi bisnis anda terkemas dengan benar melalui foto dan video</p>
                         <a class="view_btn" href="#">Read Details</a>
                     </div>
                 </div>
@@ -297,10 +310,16 @@ Teknologi Informasi yang dibutuhkan oleh para .....</p>
                     <h2>our <br class="title_br" /> <span style="color:red;">service</span></h2>
                     <h6 style="color:red;">Provide your art solution <br class="sub_br" /> Company</h6>
                 </div>
-                <p>Kami menyediakan 4 macam layanan dalam bidang digital marketing yang bisa anda pergunakan 
-                untuk kebutuhan anda yaitu videography, photography, website dan desain. Dengan seluruh tenaga yang profesional kami telah dipercaya oleh banyak client
-                untuk membuat konten yang mereka inginkan, dengan motto kami yaitu creativity dan reliability kami menjanjikan
-                sebuah karya yang menarik dan tenaga yang bisa di andalkan oleh seluruh client.</p>
+                <p>Kami memiliki DNA kuat dalam membingkai semua moment istimewa anda menjadi luar biasa.
+                    kami lahir dengan segenap cinta untuk menyediakan semua layanan terkait pengabadian kenangan.
+                     Bagi kami, mesin waktu itu benar adanya. Melalui foto dan video, semua orang dapat menjadi <i> time traveller</i>
+                    kita semua bisa merasakan kembali moment yang terbingkai didalamnya</p>
+                    <p>
+                    Kami terbentuk dengan seluruh profesionalitas dan kepercayaan. Kami pendengar yang baik
+                    serta memberikan hasil akhir sesuai kebutuhan bahkan lebih dari yang sanggup dibayangkan.
+                    Bersama dengan motto kami <b><i></i>creativity and reliability</i></b> kami menjanjikan
+                    sebuah karya yang luar biasa.
+                    </p>
                 <div class="border_bar"></div>
             </div>
         </div>
@@ -328,7 +347,7 @@ Teknologi Informasi yang dibutuhkan oleh para .....</p>
                 <div class="col-md-9">
                     <div class="our_project_details">
 
-                        @foreach ( $projeks as $projek)
+                        @foreach ( $projeks->unique('id') as $projek)
                         <div class="project_item {{$projek->kategori}} isolation tiling hitam_putih">
                             <img src="{{asset('project/'.$projek->id.'-'.$projek->idmedia.'.'.$projek->format)}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
                             <div class="project_hover">
@@ -336,7 +355,7 @@ Teknologi Informasi yang dibutuhkan oleh para .....</p>
                                     <div class="project_hover_content">
                                         <a href="#"><h4>{{$projek->nama}}</h4></a>
                                         <p>{!!str_limit($projek->deskripsi,50)!!} </p>
-                                        <a class="view_btn" href="#">View Project</a>
+                                        <a class="view_btn" href="{{route('detail_projek',$projek->id)}}">View Project</a>
                                     </div>
                                 </div>
                             </div>

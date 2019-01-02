@@ -5,6 +5,9 @@
 .FreestyleScript{
     font-family: FreestyleScript !important;
 }
+.main_header_area.navbar_fixed .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li a {
+    color: #fff !important;
+}
 .oke{
     margin-top: -500px !important;
 }

@@ -16,9 +16,6 @@ use App\link;
 |
 */
 //-----------------backend---------------------
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('/admin', function () {
     $data = array(
         'hal' => 'dashboard',
@@ -34,6 +31,11 @@ Route::get('/admin/home', function () {
 Route::resource('admin/project','ProjectController');
 Route::resource('admin/artikel','artikelController');
 Auth::routes();
+Route::redirect('register', 'login', 301);
+Route::match(['get', 'post'], 'password/login', function(){
+    return redirect('/login');
+});
+
 Route::resource('admin/site','SiteController');
 Route::resource('admin/testimoni','testimonicontroller');
 Route::resource('admin/pricelist','pricelistcontroller');
@@ -42,7 +44,7 @@ Route::resource('admin/pricelist','pricelistcontroller');
 //-----------------/backend---------------------
 
 //-----------------frontend---------------------
-Route::get('/page/home', function () {
+Route::get('/', function () {
     $data="home";
     // $projeks = projek::all();
     $projeks = projek::join('media','projeks.id', '=', 'media.idkonten')

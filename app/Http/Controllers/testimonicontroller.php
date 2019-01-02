@@ -15,7 +15,7 @@ class testimoniController extends Controller
             'sub' => 'lihat');
         return view('backend.lihattestimoni',compact('testimoni'))->with($data);
     }
-   
+
     /**
      * Show the form for creating a new resource.
      *
@@ -28,7 +28,7 @@ class testimoniController extends Controller
             'sub' => 'tambah');
         return view('backend.tambahtestimoni')->with($data);
     }
-  
+
     /**
      * Store a newly created resource in storage.
      *
@@ -44,7 +44,7 @@ class testimoniController extends Controller
 	    	$testimoni->created_at = now();
 	    	$testimoni->updated_at = now();
             $testimoni->save();
-            
+
             $image = $request->file('gambar');
             $ext = $image->guessClientExtension();
             $img = $testimoni->id.'.'.$ext;
@@ -57,7 +57,7 @@ class testimoniController extends Controller
     		return redirect()->route('testimoni.index')->with('gagal',$msg);
     	}
     }
-   
+
     /**
      * Display the specified resource.
      *
@@ -72,7 +72,7 @@ class testimoniController extends Controller
             'testimoni' => $testimoni);
         return view('backend.detailtestimoni',compact('testimoni'))->with($data);
     }
-   
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -87,7 +87,7 @@ class testimoniController extends Controller
               'testimoni' => $testimoni);
         return view('backend.edittestimoni')->with($data);
     }
-  
+
     /**
      * Update the specified resource in storage.
      *
@@ -101,17 +101,17 @@ class testimoniController extends Controller
             'nama' => 'required',
             'testimoni' => 'required',
         ]);
-  
+
         $testimoni = testimoni::find($id);
 	    $testimoni->nama = $request->get('nama');
         $testimoni->testimoni = $request->get('testimoni');
 
       	$testimoni->save();
-        
+
         return redirect()->route('testimoni.show',$testimoni->id)
                         ->with('success','testimoni updated successfully');
     }
-  
+
     /**
      * Remove the specified resource from storage.
      *
@@ -121,7 +121,7 @@ class testimoniController extends Controller
     public function destroy(testimoni $testimoni)
     {
         $testimoni->delete();
-  
+
         return redirect()->route('testimoni.index')
                         ->with('success','testimoni deleted successfully');
     }

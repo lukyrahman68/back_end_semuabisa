@@ -30,11 +30,11 @@
                     @csrf
                     <div><Strong>File</Strong>
                       <input type="text" name="jumlahmedia" id="jumlahmedia" value="1" hidden>
-                      <input type="file" class="form-control file-input" name="gambar1" placeholder="Masukkan gambar">
+                      <!--<input type="file" class="form-control file-input" name="gambar1" placeholder="Masukkan gambar">-->
                       <div id="media"></div>
                     </div>
-                    <button type="button" class="btn btn-default" onclick=tambahmedia()>+
-                    </button>
+                    <!--<button type="button" class="btn btn-default" onclick=tambahmedia()>+
+                    </button>-->
                     <div><Strong>Link</Strong>
                       <input type="text" name="jumlahlink" id="jumlahlink" value="1" hidden>
                       <input type="text" class="form-control file-input" name="link1">

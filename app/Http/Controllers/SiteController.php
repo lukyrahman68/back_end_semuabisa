@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\site;
+use App\Site;
 use Illuminate\Http\Request;
 
 class siteController extends Controller
 {
     public function index()
     {
-        $site = site::all();
+        $site = Site::all();
         $data = array(
             'hal' => 'site',
             'sub' => 'lihat');
@@ -38,7 +38,7 @@ class siteController extends Controller
     public function store(Request $request)
     {
         try{
-    		$site = new site();
+    		$site = new Site();
 	    	$site->page = $request->get('page');
             $site->deskripsi1 = $request->get('deskripsi1');
             $site->deskripsi2 = $request->get('deskripsi2');
@@ -78,7 +78,7 @@ class siteController extends Controller
      * @param  \App\site  $site
      * @return \Illuminate\Http\Response
      */
-    public function edit(site $site)
+    public function edit(Site $site)
     {
         $data = array(
             'hal' => 'site',
@@ -102,7 +102,7 @@ class siteController extends Controller
             'deskripsi' => 'required',
         ]);
   
-        $site = site::find($id);
+        $site = Site::find($id);
 	    $site->nama = $request->get('judul');
         $site->kategori = $request->get('kategori');
         $site->deskripsi = $request->get('deskripsi');
@@ -119,7 +119,7 @@ class siteController extends Controller
      * @param  \App\site  $site
      * @return \Illuminate\Http\Response
      */
-    public function destroy(site $site)
+    public function destroy(Site $site)
     {
         $site->delete();
   

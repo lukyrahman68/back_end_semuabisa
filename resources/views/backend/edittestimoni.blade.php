@@ -33,7 +33,7 @@
                       <input type="text" class="form-control" name="nama" placeholder="Nama" value="{{$testimoni->nama}}">
                     </div>
                     <div><strong>Testimoni :</strong>
-                      <textarea class="textarea" placeholder="Testimoni" name="testimoni" 
+                      <textarea placeholder="Testimoni" name="testimoni" 
                                 style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
                                 {{$testimoni->testimoni}}
                                 </textarea>

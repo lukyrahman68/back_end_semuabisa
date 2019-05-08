@@ -7,7 +7,7 @@
             <ul>
                 <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home-slider/slider-1.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/about/Photo_Camera.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/about/pre-wedding-pernikahan-foto-video-surabaya/Logo_bg.jpg')}}"  alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box2">
                         <div class="tp-caption secand_text"
@@ -53,12 +53,14 @@
         </div>
     </section>
     <!--================End Main Slider Area =================-->
-    <section class="our_project_area">
+    <section class="our_project_area" style="
+    padding-bottom: 10px;
+">
         <div class="container">
             <div class="row">
                 <div class="col-md-4"></div>
-                <div class="col-md-4">
-                        <img src="{{asset('img/about/Our_Company.png')}}" alt="" srcset="" style="max-width:100%;">
+                <div class="col-md-4" align="center">
+                        <img src="{{asset('img/about/pre-wedding-pernikahan-foto-video-surabaya/Our Company.jpg')}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" srcset="" style="max-width:80%;">
                 </div>
                 <div class="col-md-4"></div>
             </div>
@@ -66,7 +68,7 @@
                 <span style="font-size: 30px">
                     <p style="margin-bottom:-40px">
                         History Of<br>
-                        <b>SEMUABISA ART</b>
+                        <b>SEMUABISA CINEMA</b>
                     </p>
                 </span><br>
                 <p style="text-align: justify">
@@ -77,28 +79,29 @@
             </div>
         </div>
     </section>
-    <section>
+    <!--<section>
         <div class="col-md-12" style="position: relative">
-            <img src="{{asset('img/about/Photo 2.jpg')}}"  srcset="" style="max-width:100%;height: 250px;min-width:100%;object-fit: cover">
+            <img src="{{asset('img/about/pre-wedding-pernikahan-foto-video-surabaya/Photo 2.jpg')}}"  srcset="" style="max-width:100%;height: 250px;min-width:100%;object-fit: cover">
         </div><br><br><br><br>
         <div class="row" style="position: absolute;">
                 <div class="col-md-6"></div>
                 <div class="col-md-3">
-                    <img src="{{asset('img/about/Our Prespective.png')}}" alt="" srcset="" style="max-width:50%;">
+                    <img src="{{asset('img/about/pre-wedding-pernikahan-foto-video-surabaya/Our Prespective.png')}}" alt="" srcset="" style="max-width:50%;">
                 </div>
                 <div class="col-md-3"></div>
             </div>
-    </section>
+    </section>-->
     <section>
         <div class="container" >
-            <div class="col-md-12" style="padding-top: 3em;">
-                    <img src="{{asset('img/about/Visi Misi.png')}}" alt="" srcset="" style="max-width:100%;">
+            <div class="col-md-12">
+                <div class="visimisi"></div>
+                    <!--<img src="{{asset('img/about/pre-wedding-pernikahan-foto-video-surabaya/Visi Misi.png')}}" alt="" srcset="" style="max-width:100%;">-->
             </div>
             <div class="col-md-12" style="background-color: #eee">
                 <div class="row">
                     <div class="col-md-4"></div>
                     <div class="col-md-4" style="text-align: center">
-                        <img src="{{asset('img/about/Our Team.png')}}" alt="" srcset="" style="max-width:100%;max-height: 100px;">
+                        <img src="{{asset('img/about/pre-wedding-pernikahan-foto-video-surabaya/Our Team.png')}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" srcset="" style="max-width:100%;max-height: 100px;">
                         <p>
                             Kami memiliki orang-orang baik yang memiliki kemampuan khusus dalam menyediakan dokumentasi foto dan video terbaik untuk anda.
 Kami selalu percaya dengan menjadi pendengar yang baik bisa membuat kami lebih memahami client dan mengerti kebutuhan mereka.
@@ -108,64 +111,15 @@ Dengan pelayanan sepenuh hati, membuat kami bisa menjaga kepercayaan client kare
                     <div class="col-md-4"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
+            <!--<div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
                         <br><br>
-                        <img src="{{asset('img/about/Photo Team.png')}}" alt="" srcset="" style="max-width:100%;">
+                        <img src="" alt="" srcset="" style="max-width:100%;">
                 </div>
-                <div class="col-md-4"></div>
-            </div>
+                <div class="col-md-2"></div>
+            </div>-->
         </div>
     </section>
     <br><br>
-
-    <!--================Testimonials Area =================-->
-    <section class="testimonials_area">
-        <div class="container">
-            <div class="row testimonials_inner">
-                <div class="col-md-4">
-                    <div class="main_w_title">
-                        <h2>Client <br class="title_br" />Says</h2>
-                        <h6 style="color:red">True Word</h6>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="testimonials_slider owl-carousel">
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================End Testimonials Area =================-->
 @endsection

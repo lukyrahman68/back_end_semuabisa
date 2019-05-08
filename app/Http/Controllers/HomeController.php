@@ -27,13 +27,5 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function mail(request $request)
-    {
-    $nama = $request->nama;
-    $email = $request->email;
-    $pesan = $request->pesan;
-    Mail::to('semuabisa.art@gmail.com')->send(new SendMail($nama,$email,$pesan));
 
-    return redirect()->route('contact_us');
-    }
 }

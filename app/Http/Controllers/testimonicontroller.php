@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\testimoni;
+use App\media;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMail;
 
 class testimoniController extends Controller
 {
@@ -44,12 +47,23 @@ class testimoniController extends Controller
 	    	$testimoni->created_at = now();
 	    	$testimoni->updated_at = now();
             $testimoni->save();
-
-            $image = $request->file('gambar');
+            
+            if ($request->hasFile('gambar')) {
+                $image = $request->file('gambar');
             $ext = $image->guessClientExtension();
             $img = $testimoni->id.'.'.$ext;
             $image->move(public_path('testimoni'),$img);
-
+            }
+           
+            
+            $media = new media();
+            $media->idkonten = $testimoni->id;
+            $media->idmedia = "1";
+            $media->format = "jpeg";
+            $media->kategori = "testimoni";
+            $media->created_at = now();
+            $media->updated_at = now();
+            $media->save();
 			return redirect()->route('testimoni.index')->with('sukses','testimoni berhasil ditambahkan');
     	}
     	catch(\Exception $e){
@@ -124,5 +138,14 @@ class testimoniController extends Controller
 
         return redirect()->route('testimoni.index')
                         ->with('success','testimoni deleted successfully');
+    }
+    public function mail(request $request)
+    {
+        $nama = $request->nama;
+        $email = $request->email;
+        $pesan = $request->pesan;
+        Mail::to('semuabisa.art@gmail.com')->send(new SendMail($nama,$email,$pesan));
+    
+        return redirect()->route('contact_us');
     }
 }

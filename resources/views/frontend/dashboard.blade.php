@@ -7,10 +7,10 @@
             <ul>
                 <li data-index="rs-2972" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('img/wedding-murah-surabaya.jpg')}}"  alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="slider_text_box">
-                        <div class="tp-caption first_text respon1"
+                        <!--<div class="tp-caption first_text respon1"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
@@ -27,9 +27,28 @@
                         data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]"
                         data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]">SELAMAT DATANG DI </div>
-
-                        <div class="tp-caption secand_text"
+                        data-paddingleft="[0,0,0,0]">SELAMAT DATANG DI </div>-->
+    
+                        <!--<div class="tp-caption first_text respon1"
+                        data-x="['center','center','center','center']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-hoffset="['0','0','0','0']"
+                        data-voffset="['-83','-83','-83','-120','-120']"
+                        data-fontsize="['25','25','25','25']"
+                        data-lineheight="['38','38','38','38']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1750,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[-20,-20,-20,-20]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]">SELAMAT DATANG DI </div>-->
+                        
+                        <!--<div class="tp-caption secand_text"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
@@ -46,15 +65,56 @@
                         data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]"
                         data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]"><span>SEMUABISA</span> <span class="art">ART</span></div>
+                        data-paddingleft="[0,0,0,0]">-->
+                        
+                        <div class="tp-caption first_text"
+                        data-x="['center','center','center','center']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-hoffset="['0','0','0','0']"
+                        data-voffset="['-52','-52','-52','-38','-38']"
+                        data-fontsize="['43','43','43','20','20']"
+                        data-lineheight="['100','100','100','70','70']"
+                        data-width="['none','none','none','none']"
+                        data-height="none"
+                        data-whitespace="['nowrap','nowrap','nowrap','nowrap','nowrap']"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[10,10,10,10]"
+                        data-paddingleft="[0,0,0,0]">
+                            <!--<span>SEMUABISA</span><span class="art">Cinema</span>-->
+                            <span>OFFICIAL WEBSITE</span>
+                            </div>
 
+                        <!--<div class="tp-caption secand_text respon2"
+                        data-x="['center','center','center','center']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-hoffset="['0','0','0','0']"
+                        data-voffset="['110','110','110','-20','-20']"
+                        data-fontsize="['28','28','28','28']"
+                        data-lineheight="['38','38','38','38']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1750,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"><span>SEMUABISA</span></div>-->
+                        
                         <div class="tp-caption secand_text respon2"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
-                        data-voffset="['110','110','110','-20','-20']"
-                        data-fontsize="['28','28','28','28']"
-                        data-lineheight="['38','38','38','38']"
+                        data-voffset="['15','15','15','-105','-105']"
+                        data-fontsize="['100','100','100','50']"
+                        data-lineheight="['148','148','148','148']"
                         data-width="none"
                         data-height="none"
                         data-whitespace="nowrap"
@@ -65,102 +125,15 @@
                         data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]"
                         data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]">OFFICIAL WEBSITE</div>
-                    </div>
-                </li>
-                <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home-slider/slider-1.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                    <div class="slider_text_box2">
-                        <div class="tp-caption first_text"
-                        data-x="['left','left','left','left','left']"
-                        data-y="['middle','middle','middle','middle','middle']"
-                        data-hoffset="['0','15','15','15','15']"
-                        data-voffset="['-30','-30','-30','-30','-60']"
-                        data-fontsize="['80','80','60','60','40']"
-                        data-lineheight="['90','90','70','70','50']"
-                        data-width="['none','none','none','none']"
-                        data-height="none"
-                        data-whitespace="['nowrap','nowrap','nowrap','nowrap','nowrap']"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['center','center','center','center']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]">we build dream</div>
-
-                        <div class="tp-caption secand_text"
-                        data-x="['left','left','left','left','left']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','15','15','15','15']"
-                        data-voffset="['50','50','50','40','0']"
-                        data-fontsize="['28','28','28','20','20']"
-                        data-lineheight="['38','38','38','30','30']"
-                        data-width="['760','760','760','550','400']"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1750,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['left','left','left','left']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]">We made just most advance & user friendly constraction theme in the world</div>
-
-                        <div class="tp-caption"
-                        data-x="['left','left','left','left','left']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','15','15','15','15']"
-                        data-voffset="['140','140','140','130','90']"
-                        data-fontsize="['28','28','28','28']"
-                        data-lineheight="['38','38','38','38']"
-                        data-width="['730']"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1750,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['left','left','left','left']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"><a class="slider_btn" href="#">browse services</a></div>
-                    </div>
-                </li>
-                <li data-index="rs-2974" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img3.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                    <div class="slider_text_box">
-                        <div class="tp-caption first_text"
+                        data-paddingleft="[0,0,0,0]"><span>SEMUABISA</span></div>
+                    <!--<img src = "{{asset('img/Selamat Datang.png')}}" max-width="100">-->
+                    
+                    <div class="tp-caption first_text"
                         data-x="['center','center','center','center']"
                         data-y="['middle','middle','middle','middle']"
                         data-hoffset="['0','0','0','0']"
-                        data-voffset="['-38','-38','-38','-20','-20']"
-                        data-fontsize="['28','28','28','28']"
-                        data-lineheight="['38','38','38','38']"
-                        data-width="none"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1750,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['left','left','left','left']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]">SELAMAT DATANG DI </div>
-
-                        <div class="tp-caption secand_text"
-                        data-x="['center','center','center','center']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['38','38','38','38','38']"
-                        data-fontsize="['110','110','110','50','50']"
+                        data-voffset="['90','90','90','36','36']"
+                        data-fontsize="['65','65','65','37','37']"
                         data-lineheight="['100','100','100','70','70']"
                         data-width="['none','none','none','none']"
                         data-height="none"
@@ -172,27 +145,12 @@
                         data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]"
                         data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]"><span>SEMUABISA</span> <span class="art">ART</span></div>
-
-                        <div class="tp-caption first_text"
-                        data-x="['center','center','center','center']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['110','110','110','-20','-20']"
-                        data-fontsize="['28','28','28','28']"
-                        data-lineheight="['38','38','38','38']"
-                        data-width="none"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1750,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['left','left','left','left']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]">OFFICIAL WEBSITE</div>
+                        data-paddingleft="[0,0,0,0]">
+                            <!--<span>SEMUABISA</span><span class="art">Cinema</span>-->
+                            <span style="font-family: bella fashion personal use;">CINEMA</span>
+                            </div>
                     </div>
+                    
                 </li>
             </ul>
         </div>
@@ -213,17 +171,6 @@
 
     <!--================Who We Are Area =================-->
     <section class="who_we_are_area vh_content">
-        <div class="container home_container">
-            <div class="row who_we_inner">
-                <div class="col-md-12 border_tu col-xs-12 col-sm-12">
-                    <div class="title_trust_us">
-                        <div class="garis">
-                            Trust <span style="color:red">US</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container padding_vh">
             <div class="row" style="margin: 0;margin-bottom: 1em;">
                 <div class="col-md-6 col-xs-12" style="text-align: justify">
@@ -241,7 +188,7 @@
                     karena setiap moment bahagia sudah seharusnya mendapatkan tempat paling istimewa dalam kenangan kita.</p>
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <img src="{{asset('img/Kolase.png')}}" alt="" style="max-width: 100%;max-height: 100%">
+                    <img src="{{asset('img/foto-wedding-surabaya.jpg')}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" style="max-width: 100%;max-height: 100%">
                 </div>
             </div>
         </div>
@@ -259,10 +206,10 @@
                             <img src="{{asset('img/SB_movie.png')}}" height="50" width="50" alt="">
                             <img src="{{asset('img/SB_movie_black.png')}}" height="50" width="50" alt="">
                         </div>
-                        <a href="#"><h4>Pre-Wedding</h4></a>
+                        <a href="#"><h4 itemprop="nama">Pre-Wedding</h4></a>
                         <p>Selama apapun sebuah hubungan, jangan pernah berhenti untuk membuat moment baik untuk dikenang
                             dan jadikanlah kami sebagai tempatmu untuk mengabadikan semua moment bahagia sebelum pernikahan.</p>
-                        <a class="view_btn" href="#">Read Details</a>
+                        <a class="view_btn" href="{{route('services')}}">Read Details</a>
                     </div>
                 </div>
                 <div class="service_item">
@@ -271,11 +218,11 @@
                             <img src="{{asset('img/SB_camera.png')}}" height="50" width="50" alt="">
                             <img src="{{asset('img/SB_camera_black.png')}}" height="50" width="50" alt="">
                         </div>
-                        <a href="#"><h4>Wedding</h4></a>
+                        <a href="#"><h4 itemprop="nama">Wedding</h4></a>
                         <p>Sebuah pernikahan, rasanya tidaklah lengkap tanpa ada foto dan video didalamnya.
                             Karena cara paling baik untuk mengingat kenangan adalah menjadikannya abadi.
                         Bersama kami mari abadikan kenangan anda</p>
-                        <a class="view_btn" href="#">Read Details</a>
+                        <a class="view_btn" href="{{route('services')}}">Read Details</a>
                     </div>
                 </div>
                 <div class="service_item">
@@ -284,10 +231,10 @@
                             <img src="{{asset('img/SB_camera1.png')}}" height="50" width="50" alt="">
                             <img src="{{asset('img/SB_camera_black1.png')}}" height="50" width="50" alt="">
                         </div>
-                        <a href="#"><h4>Dokumentasi</h4></a>
+                        <a href="#"><h4 itemprop="nama">Dokumentasi</h4></a>
                         <p>Sudah menjadi rahasia umum bahwa mendokumentasikan sebuah moment adalah sesuatu yang harus dilakukan.
                             Bersama kami mari dokumentasikan semua peristiwa bahagia</p>
-                        <a class="view_btn" href="#">Read Details</a>
+                        <a class="view_btn" href="{{route('services')}}">Read Details</a>
                     </div>
                 </div>
                 <div class="service_item">
@@ -296,10 +243,10 @@
                             <img src="{{asset('img/SB_camera2.png')}}" height="50" width="50" alt="">
                             <img src="{{asset('img/SB_camera_black2 .png')}}" height="50" width="50" alt="">
                         </div>
-                        <a href="#"><h4>Branding</h4></a>
+                        <a href="#"><h4 itemprop="nama">Branding</h4></a>
                         <p>Banyak cara memperkenalkan produk anda pada semua orang dengan memanfaatkan teknologi.
                             Kami akan memastikan strategi bisnis anda terkemas dengan benar melalui foto dan video</p>
-                        <a class="view_btn" href="#">Read Details</a>
+                        <a class="view_btn" href="{{route('services')}}">Read Details</a>
                     </div>
                 </div>
             </div>
@@ -307,8 +254,8 @@
         <div class="right_service">
             <div class="right_service_text">
                 <div class="main_b_title">
-                    <h2>our <br class="title_br" /> <span style="color:red;">service</span></h2>
-                    <h6 style="color:red;">Provide your art solution <br class="sub_br" /> Company</h6>
+                    <h2>our <br class="title_br" /> <span style="color:#e64d4d;">service</span></h2>
+                    <h6 style="color:#e64d4d;">Provide your art solution <br class="sub_br" /> Company</h6>
                 </div>
                 <p>Kami memiliki DNA kuat dalam membingkai semua moment istimewa anda menjadi luar biasa.
                     kami lahir dengan segenap cinta untuk menyediakan semua layanan terkait pengabadian kenangan.
@@ -349,12 +296,12 @@
 
                         @foreach ( $projeks->unique('id') as $projek)
                         <div class="project_item {{$projek->kategori}} isolation tiling hitam_putih">
-                            <img src="{{asset('project/'.$projek->id.'-'.$projek->idmedia.'.'.$projek->format)}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
+                            <img src="{{asset('project/wedding-surabaya/foto-video-cinematic/'.$projek->id.'-'.$projek->idmedia.'.'.$projek->format)}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
-                                        <a href="#"><h4>{{$projek->nama}}</h4></a>
-                                        <p>{!!str_limit($projek->deskripsi,50)!!} </p>
+                                        <a href="#"><h4 itemprop="nama">{{$projek->nama}}</h4></a>
+                                        <p itemprop="deskripsi">{!!str_limit($projek->deskripsi,50)!!} </p>
                                         <a class="view_btn" href="{{route('detail_projek',$projek->id)}}">View Project</a>
                                     </div>
                                 </div>
@@ -369,25 +316,47 @@
     <!--================End Our Project Area =================-->
 
     <!--================Work Area =================-->
-    <section class="work_area">
+    <!--<section class="work_area">
         <div class="container">
             <div class="work_content">
                 <div class="main_c_title">
                     <h2>HOW <br class="title_br" />TO ORDER</h2>
                     <h6>Lets Get Offer</h6>
+    </section><br><br>-->
                 </div>
             </div>
         </div>
-    </section>
     <!--================End Work Area =================-->
     <!--================Counter Area =================-->
-    <section>
-        <div class="container">
-           <img src="{{asset('img/Instruksi.png')}}" alt="" style="max-width: 100%">
-        </div>
+    <section class="ext-parent">
+        <div class="extra"></div>
     </section>
+    <section class="ins-parent">
+        <div class="instruksi"></div>
+        <!--<div class="container">-->
+        <!--   <img src="{{asset('img/cara-order-wedding-foto-video-cinematic-surabaya.png')}}" alt="" style="max-width: 100%">-->
+        <!--</div>-->
+    </section><br><br>
     <!--================End Counter Area =================-->
-
+    <!--<section>
+        <div class="container">
+            <h3 style="font-weight: bold">TERM & <span style="font-weight: lighter;">CONDITIONS</span></h3>
+            <ol>
+              <li>Pricelist diatas tidak termasuk biaya Lokasi Shoot, Transportasi dan Penginapan jika lokasi diluar surabaya</li>
+              <li>Free Make Up Artist(<span style="font-weight: bold">Khusus Surabaya Barat</span>)</li>
+              <li>Penambahan 1 hari kerja akan dikenakan biaya</li>
+              <li>Waktu penyelesaian foto/video maksimal <b>7</b> hari setelah acara.</li>
+              <li>Sistem pembayaran dapat dilakukan dengan cara:<br>
+                  DP(<b>30%</b>) untuk booking tanggal maksimal 7 hari sebelum acara<br>
+                  Pelunasan (<b>70%</b>) dapat dilakukan pada hari <b>H</b> acara atau maksimal <b>H+1</b> setelah acara.
+              </li>
+              <li>Pembayaran dapat dilakukan secara Cash atau Transfer ke <br>No Rekening BCA :<b>2710886892</b><br>
+                  Atas nama : <b>Wildan Harits Prasetyo</b>  
+              </li>
+            </ol> 
+            <br>
+        </div>
+    </section>-->
     <!--================Testimonials Area =================-->
     <section class="testimonials_area">
         <div class="container">
@@ -395,40 +364,20 @@
                 <div class="col-md-4">
                     <div class="main_w_title">
                         <h2>Client <br class="title_br" />Says</h2>
-                        <h6 style="color:red">True Word</h6>
+                        <h6 style="color:#ffcd00">True Word</h6>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="testimonials_slider owl-carousel">
+                        @foreach ($testimonis->unique('id') as $testimoni)
                         <div class="item">
                             <div class="testi_left">
                                 <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
+                                <p itemprop="testimoni-keterangan">{{$testimoni->testimoni}}</p>
+                                <a itemprop="testimoni-nama" href="#"><h4>{{$testimoni->nama}}</h4></a>
                             </div>
                             <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        @foreach ($testimonis as $testimoni)
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>{!!$testimoni->testimoni!!}</p>
-                                <a href="#"><h4>{{$testimoni->nama}}</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
+                                <img src="{{asset('testimoni/'.$testimoni->id.'.'.$testimoni->format)}}" alt="" class="testi_right">
                             </div>
                         </div>
                         @endforeach

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Projek;
+use App\projek;
 use App\media;
 use App\link;
 use Illuminate\Http\Request;
@@ -58,7 +58,7 @@ class ProjectController extends Controller
                     $image = $request->file('gambar'.$aa);
                     $ext = $image->guessClientExtension();
                     $img = $project->id.'-'.$bb.'.'.$ext;
-                    $image->move(public_path('project'),$img);
+                    $image->move(public_path('/project'),$img);
 
                     $media = new media();
                     $media->idkonten = $project->id;
@@ -74,6 +74,22 @@ class ProjectController extends Controller
             $bba=0;
             for($aaa=1;$aaa<=$request->get("jumlahlink");$aaa++){
                 if ($request->has('link'.$aaa)) {
+                    if($aaa==1){
+                        if ($request->get('link1')=="") {
+                        
+                        }else{
+                            $bba++;
+                            $link = new link();
+                            $link->idkonten = $project->id;
+                            $link->idlink = $bba;
+                            $link->isi = $request->get('link'.$bba);
+                            $link->kategori = "project";
+                            $link->created_at = now();
+                            $link->updated_at = now();
+                            $link->save();
+                        }    
+                    }else{
+                        
                     $bba++;
                     $link = new link();
                     $link->idkonten = $project->id;
@@ -83,6 +99,7 @@ class ProjectController extends Controller
                     $link->created_at = now();
                     $link->updated_at = now();
                     $link->save();
+                    }
                 }
             }
 			return redirect()->route('project.index')->with('sukses','projek berhasil ditambahkan');
@@ -120,10 +137,14 @@ class ProjectController extends Controller
      */
     public function edit(projek $project)
     {
+        $media = media::where('idkonten', '=', $project->id)->get();
+        $link = link::where('idkonten', '=', $project->id)->get();
         $data = array(
             'hal' => 'project',
               'sub' => 'edit',
-              'projek' => $project);
+              'projek' => $project,
+              'media' => $media,
+            'link' => $link);
         return view('backend.editprojek')->with($data);
     }
   
@@ -141,7 +162,25 @@ class ProjectController extends Controller
             'kategori' => 'required',
             'deskripsi' => 'required',
         ]);
-  
+        
+        for($aa=1;$aa<=$request->get("jumlahmedia");$aa++){
+                if ($request->has('gambar'.$aa)) {
+                    $imgp = public_path('/project/'.$request->get('hide-'.$aa).'.'.$request->get('format-'.$aa));
+                    $imgpp = public_path().'/project/'.$request->get('hide-'.$aa).'.'.$request->get('format-'.$aa);
+                    unlink($imgpp);
+                    
+                    $image = $request->file('gambar'.$aa);
+                    $ext = $image->guessClientExtension();
+                    $img = $request->get('hide-'.$aa).'.'.$request->get('format-'.$aa);
+                    $image->move(public_path('/project'),$img);
+
+                    /*$media = media::find($id);
+                    $media->format = $request->get('format-'.$aa);
+                    $media->updated_at = now();
+                    $media->save();*/
+            }
+        }
+        
         $project = projek::find($id);
 	    $project->nama = $request->get('judul');
         $project->kategori = $request->get('kategori');

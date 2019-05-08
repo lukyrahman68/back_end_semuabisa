@@ -1,91 +1,7 @@
 @extends('layouts.app_frontend')
 
 @section('content')
-    <!--================Main Slider Area =================-->
-    <section class="main_slider_area">
-        <div id="main_slider" class="rev_slider" data-version="5.3.1.6" style="max-height: 400px !important;">
-            <ul>
-                <li data-index="rs-2972" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                    <div class="slider_text_box">
-
-                        <div class="tp-caption secand_text oke"
-                        data-x="['center','center','center','center']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['38','38','38','38','38']"
-                        data-fontsize="['110','110','110','50','50']"
-                        data-lineheight="['100','100','100','70','70']"
-                        data-width="['none','none','none','none']"
-                        data-height="none"
-                        data-whitespace="['nowrap','nowrap','nowrap','nowrap','nowrap']"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['center','center','center','center']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]"><span>FULL PROJECT</span></div>
-
-
-                    </div>
-                </li>
-                <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home-slider/slider-1.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                    <div class="slider_text_box2">
-                        <div class="tp-caption secand_text oke"
-                        data-x="['center','center','center','center']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['38','38','38','38','38']"
-                        data-fontsize="['110','110','110','50','50']"
-                        data-lineheight="['100','100','100','70','70']"
-                        data-width="['none','none','none','none']"
-                        data-height="none"
-                        data-whitespace="['nowrap','nowrap','nowrap','nowrap','nowrap']"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['center','center','center','center']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]"><span>FULL PROJECT</span></div>
-                    </div>
-                </li>
-                <li data-index="rs-2974" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img3.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                    <div class="slider_text_box">
-                        <div class="tp-caption secand_text oke"
-                        data-x="['center','center','center','center']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['38','38','38','38','38']"
-                        data-fontsize="['110','110','110','50','50']"
-                        data-lineheight="['100','100','100','70','70']"
-                        data-width="['none','none','none','none']"
-                        data-height="none"
-                        data-whitespace="['nowrap','nowrap','nowrap','nowrap','nowrap']"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['center','center','center','center']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]"><span>FULL PROJECT</span></div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+    
     <!--================End Main Slider Area =================-->
     <section style="padding-top:5em;">
         <div class="container">
@@ -98,7 +14,7 @@
                         @if($sub_data=="pre-wedding")
                             active
                         @endif
-                      " onclick="location.href='{{route("pre-wedding")}}'">
+                      " onclick="location.href='{{route("pre-wedding")}}'" style="padding-left: 4px;padding-right: 4px;">
                         <input type="radio" name="options" id="option1" autocomplete="off"
                         @if($sub_data=="pre-wedding")
                             checked
@@ -109,7 +25,7 @@
                         @if($sub_data=="wedding")
                             active
                         @endif
-                      " onclick="location.href='{{route("wedding")}}'">
+                      " onclick="location.href='{{route("wedding")}}'" style="padding-left: 4px;padding-right: 4px;">
                         <input type="radio" name="options" id="option2" autocomplete="off"
                         @if($sub_data=="wedding")
                             checked
@@ -120,7 +36,7 @@
                         @if($sub_data=="dokumentasi")
                             active
                         @endif
-                      " onclick="location.href='{{route("dokumentasi")}}'">
+                      " onclick="location.href='{{route("dokumentasi")}}'" style="padding-left: 4px;padding-right: 4px;">
                         <input type="radio" name="options" id="option3" autocomplete="off"
                         @if($sub_data=="dokumentasi")
                             checked
@@ -131,7 +47,7 @@
                         @if($sub_data=="branding")
                             active
                         @endif
-                      " onclick="location.href='{{route("branding")}}'">
+                      " onclick="location.href='{{route("branding")}}'" style="padding-left: 4px;padding-right: 4px;">
                         <input type="radio" name="options" id="option3" autocomplete="off"
                         @if($sub_data=="branding")
                             checked
@@ -139,6 +55,7 @@
                         > Branding
                       </label><br><br>
                     </div>
+                    
                     {{-- <ul class="nav nav-tabs our_project_filter">
                         <li class="active" data-filter="*"><a href="#">All</a></li>
                         @foreach ( $projeks->unique('kategori') as $projek)
@@ -146,7 +63,7 @@
                         @endforeach
                       </ul><br>
                     <div> --}}
-
+<br><br><br>
                                 <div class="row">
                                     <div class="col-md-2">
 
@@ -155,7 +72,7 @@
                                         <div class="our_project_details">
                                             @foreach ( $projeks->unique('id') as $projek)
                                             <div class="project_item {{$projek->kategori}} isolation tiling hitam_putih">
-                                                <img src="{{asset('project/'.$projek->id.'-'.$projek->idmedia.'.'.$projek->format)}}" alt="" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
+                                                <img src="{{asset('project/wedding-surabaya/foto-video-cinematic/'.$projek->id.'-'.$projek->idmedia.'.'.$projek->format)}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" width="275" height="280" style="object-fit: cover; margin-bottom:0.5em;">
                                                 <div class="project_hover">
                                                     <div class="project_hover_inner">
                                                         <div class="project_hover_content">
@@ -173,7 +90,7 @@
 
                                     </div>
                                 </div>
-
+<br><br><br>
                     </div>
                 </div>
 
@@ -188,41 +105,24 @@
                 <div class="col-md-4">
                     <div class="main_w_title">
                         <h2>Client <br class="title_br" />Says</h2>
-                        <h6 style="color:red">True Word</h6>
+                        <h6 style="color:#ffcd00">True Word</h6>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="testimonials_slider owl-carousel">
+                        @foreach ($testimonis->unique('id') as $testimoni)
                         <div class="item">
                             <div class="testi_left">
                                 <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
+                                <p>{{$testimoni->testimoni}}</p>
+                                <a href="#"><h4>{{$testimoni->nama}}</h4></a>
                             </div>
                             <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
+                                <img src="{{asset('testimoni/'.$testimoni->id.'.'.$testimoni->format)}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" style="max-width:160px;max-height:240px">
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
+                        @endforeach
+
                     </div>
                 </div>
             </div>

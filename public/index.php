@@ -54,6 +54,9 @@ $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
+// $app->bind('path.public', function() {
+// return base_path('public_html');
+// });
 
 $response->send();
 

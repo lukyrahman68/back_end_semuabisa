@@ -2,97 +2,14 @@
 
 @section('content')
     <!--================Main Slider Area =================-->
-    <section class="main_slider_area">
-        <div id="main_slider" class="rev_slider" data-version="5.3.1.6" style="max-height: 400px !important;">
-            <ul>
-                <li data-index="rs-2972" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                    <div class="slider_text_box">
-
-                        <div class="tp-caption secand_text oke"
-                        data-x="['center','center','center','center']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['38','38','38','38','38']"
-                        data-fontsize="['110','110','110','50','50']"
-                        data-lineheight="['100','100','100','70','70']"
-                        data-width="['none','none','none','none']"
-                        data-height="none"
-                        data-whitespace="['nowrap','nowrap','nowrap','nowrap','nowrap']"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['center','center','center','center']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]"><span>OUR SERVICES</span></div>
-
-
-                    </div>
-                </li>
-                <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home-slider/slider-1.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                    <div class="slider_text_box2">
-                        <div class="tp-caption secand_text oke"
-                        data-x="['center','center','center','center']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['38','38','38','38','38']"
-                        data-fontsize="['110','110','110','50','50']"
-                        data-lineheight="['100','100','100','70','70']"
-                        data-width="['none','none','none','none']"
-                        data-height="none"
-                        data-whitespace="['nowrap','nowrap','nowrap','nowrap','nowrap']"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['center','center','center','center']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]"><span>OUR SERVICES</span></div>
-                    </div>
-                </li>
-                <li data-index="rs-2974" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{{asset('img/home_img.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{asset('img/home_img3.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                    <div class="slider_text_box">
-                        <div class="tp-caption secand_text oke"
-                        data-x="['center','center','center','center']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['38','38','38','38','38']"
-                        data-fontsize="['110','110','110','50','50']"
-                        data-lineheight="['100','100','100','70','70']"
-                        data-width="['none','none','none','none']"
-                        data-height="none"
-                        data-whitespace="['nowrap','nowrap','nowrap','nowrap','nowrap']"
-                        data-type="text"
-                        data-responsive_offset="on"
-                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
-                        data-textAlign="['center','center','center','center']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[10,10,10,10]"
-                        data-paddingleft="[0,0,0,0]"><span>OUR SERVICES</span></div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+    
     <!--================End Main Slider Area =================-->
     <section style="padding-top:5em;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                    <img src="{{asset('img/service/our_services.png')}}" alt="" style="max-height: 100%;max-width:100%">
+                    <img src="{{asset('img/service/wedding-pre-surabaya-foto-video-cinematic/our_services.png')}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" style="max-height: 100%;max-width:100%">
                 </div>
                 <div class="col-md-4"></div>
             </div>
@@ -100,7 +17,7 @@
             <div class="row" style="margin-bottom: 3em;">
 
                 <div class="col-md-5">
-                    <img src="{{asset('img/service/PREWED.jpg')}}" alt="" style="max-height: 100%;max-width:100%">
+                    <img src="{{asset('img/service/wedding-pre-surabaya-foto-video-cinematic/PREWED.jpg')}}"alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" style="max-height: 100%;max-width:100%">
                 </div>
                 <div class="col-md-7">
                         <span style="font-weight: bold;font-size: 30px">Pre-Wedding</span><br>
@@ -123,12 +40,12 @@
                     <q style="font-weight: bold;font-size: 16px">Bersama kami, mari jadikan hari istimewa anda abadi sepanjang masa.</q>
                 </div>
                 <div class="col-md-5">
-                    <img src="{{asset('img/service/WEDDING.jpg')}}" alt="" style="max-height: 100%;max-width:100%">
+                    <img src="{{asset('img/service/wedding-pre-surabaya-foto-video-cinematic/WEDDING.jpg')}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" style="max-height: 100%;max-width:100%">
                 </div>
             </div>
             <div class="row" style="margin-bottom: 3em;">
                 <div class="col-md-5">
-                    <img src="{{asset('img/service/Dokumentasi.jpg')}}" alt="" style="max-height: 100%;max-width:100%">
+                    <img src="{{asset('img/service/wedding-pre-surabaya-foto-video-cinematic/Dokumentasi.jpg')}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" style="max-height: 100%;max-width:100%">
                 </div>
                 <div class="col-md-7">
                     <span style="font-weight: bold;font-size: 30px">Dokumentasi</span><br>
@@ -148,58 +65,9 @@
                     <q style="font-weight: bold;font-size: 16px">Kami akan memastikan semua strategi bisnis anda terkemas dengan benar melalui foto dan video</q>
                 </div>
                 <div class="col-md-5">
-                    <img src="{{asset('img/service/Branding.jpg')}}" alt="" style="max-height: 100%;max-width:100%;object-fit: cover">
+                    <img src="{{asset('img/service/wedding-pre-surabaya-foto-video-cinematic/Branding.jpg')}}" alt="Wedding Foto Video Cinematic Surabaya" title="Wedding Foto Video Cinematic Surabaya" style="max-height: 100%;max-width:100%;object-fit: cover">
                 </div>
             </div>
         </div>
     </section>
-
-    <!--================Testimonials Area =================-->
-    <section class="testimonials_area">
-        <div class="container">
-            <div class="row testimonials_inner">
-                <div class="col-md-4">
-                    <div class="main_w_title">
-                        <h2>Client <br class="title_br" />Says</h2>
-                        <h6 style="color:red">True Word</h6>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="testimonials_slider owl-carousel">
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_left">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                                <a href="#"><h4>Eng. Abul Kalam</h4></a>
-                            </div>
-                            <div class="testi_right">
-                                <img src="{{asset('img/testimonials/test-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================End Testimonials Area =================-->
 @endsection

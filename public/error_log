@@ -1,0 +1,164 @@
+[02-Jan-2019 15:10:20 UTC] PHP Warning:  require(/home/semoabis/public_html/../vendor/autoload.php): failed to open stream: No such file or directory in /home/semoabis/public_html/index.php on line 24
+[02-Jan-2019 15:10:20 UTC] PHP Fatal error:  require(): Failed opening required '/home/semoabis/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/semoabis/public_html/index.php on line 24
+[02-Jan-2019 15:10:45 UTC] PHP Warning:  require(/home/semoabis/public_html/../vendor/autoload.php): failed to open stream: No such file or directory in /home/semoabis/public_html/index.php on line 24
+[02-Jan-2019 15:10:45 UTC] PHP Fatal error:  require(): Failed opening required '/home/semoabis/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/semoabis/public_html/index.php on line 24
+[28-Jan-2019 23:12:03 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '?' in /home/semuabis/laravel/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[10-Feb-2019 12:00:50 UTC] PHP Fatal error:  Trait 'App\Mail\SerializesModels' not found in /home/semuabis/laravel/app/Mail/SendMail.php on line 12
+[10-Feb-2019 19:04:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Composer\Autoload\includeFile() in /home/semuabis/laravel/vendor/composer/ClassLoader.php:322
+Stack trace:
+#0 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Polyfil...')
+#1 /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php(29): spl_autoload_call('Symfony\\Polyfil...')
+#2 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require('/home/semuabis/...')
+#3 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#4 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#5 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#6 {main}
+  thrown in /home/semuabis/laravel/vendor/composer/ClassLoader.php on line 322
+[10-Feb-2019 19:04:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Symfony\Polyfill\Php72\Php72' not found in /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php:29
+Stack trace:
+#0 /home/semuabis/laravel/vendor/composer/autoload_real.php(66): require()
+#1 /home/semuabis/laravel/vendor/composer/autoload_real.php(56): composerRequire46b233581d6ffa7531842ad0075a1767('25072dd6e247008...', '/home/semuabis/...')
+#2 /home/semuabis/laravel/vendor/autoload.php(7): ComposerAutoloaderInit46b233581d6ffa7531842ad0075a1767::getLoader()
+#3 /home/semuabis/public_html/index.php(24): require('/home/semuabis/...')
+#4 {main}
+  thrown in /home/semuabis/laravel/vendor/symfony/polyfill-php72/bootstrap.php on line 29

@@ -5,8 +5,50 @@
 .FreestyleScript{
     font-family: FreestyleScript !important;
 }
+@media(max-width: 410px){
+    .testimonials_slider .item .testi_left {
+
+    min-height: 383px !important;
+    }
+}
+@media(max-width: 768px){
+    .testimonials_slider .item .testi_left {
+
+    min-height: 373px !important;
+}
+}
+@media(min-width: 769px){
+    .testimonials_slider .item .testi_left {
+
+    min-height: 241px !important;
+}
+}
+
+.ins-parent{
+        height:600px;
+    }
+.visimisi{
+    
+    background-image: url("../img/about/pre-wedding-pernikahan-foto-video-surabaya/Visi Misi.png");
+    background-size:     contain;                      
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 450px;
+    width : 100%;
+}
+.instruksi{
+    background-image: url("../img/cara-order-wedding-foto-video-cinematic-surabaya.png");
+    background-size:     contain;                      
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 100%;
+    width : 100%;
+}
 .main_header_area.navbar_fixed .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li a {
     color: #fff !important;
+}
+.pad{
+    padding-top: 12em;
 }
 .oke{
     margin-top: -500px !important;
@@ -48,6 +90,12 @@ html{
     justify-content: center;
     margin-bottom: 20px;
 
+}
+@font-face {
+  font-family: 'CenturyGothic';
+   src:url('fonts/gothic.eot') format('embedded-opentype'),
+    url('fonts/gothic.woff') format('woff'),
+    url('fonts/gothic.ttf') format('true-type');
 }
 *:not(i){
     font-family: Century Gothic !important;
@@ -103,6 +151,37 @@ html{
     }
 }
 @media (max-width: 499px) {
+    .ext-parent{
+        height:170px;
+    }
+    .extra{
+        background-image: url("../img/extra.png");
+        background-size:     contain;                      
+        background-repeat:   no-repeat;
+        background-position: center center;  
+        height: 100%;
+        width : 100%;
+    }
+    .ins-parent{
+        height:1200px;
+    }
+    .visimisi{
+        
+        background-image: url("../img/about/pre-wedding-pernikahan-foto-video-surabaya/Visi Mobile.jpg");
+        background-size:     contain;                      
+        background-repeat:   no-repeat;
+        background-position: center center;  
+        height: 1100px;
+        width : 100%;
+    }
+    .instruksi{
+        background-image: url("../img/cara-order-wedding-foto-video-cinematic-surabaya-2.png'.png");
+        background-size:     contain;                      
+        background-repeat:   no-repeat;
+        background-position: center center;  
+        height: 100%;
+        width : 100%;
+    }
     .our_service_area{
         display: grid;
         grid-template-columns: auto;
@@ -117,4 +196,17 @@ html{
     .left_service{
         grid-area: item2;
     }
+    .home_container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:35% auto 40%;
+    grid-template-areas:
+    '. trust_us .';
+    }
+    .our_service_area .left_service {
+    height: 1370px;
+}
+.pad{
+    padding-top: 5em;
+}
 }

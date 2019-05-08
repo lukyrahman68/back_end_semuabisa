@@ -12483,7 +12483,7 @@ iframe {
 }
 
 .main_slider_area .rev_slider .tp-bullets {
-  z-index: 20 !important;
+  z-index: 0 !important;
 }
 
 .main_slider_area .rev_slider .tp-bullets .tp-bullet {
@@ -13919,16 +13919,41 @@ iframe {
 .testimonials_area .main_w_title h2:before {
   border-color: #e2e2e2;
 }
-
-.testimonials_slider .item .testi_left {
-  max-width: 570px;
-  display: inline-block;
-  background: #ffcd00;
-  float: left;
-  min-height: 205px;
-  padding: 20px 15px 20px 50px;
-  position: relative;
+@media(max-width: 768px){
+    .testimonials_slider .item .testi_left {
+      max-width: 220px;
+      display: inline-block;
+      background: #ffcd00;
+      float: left;
+      min-height: 205px;
+      padding: 20px 15px 20px 20px;
+      position: relative;
+    }    
 }
+@media(max-width: 410px){
+    .testimonials_slider .item .testi_left {
+      max-width: 170px;
+      display: inline-block;
+      background: #ffcd00;
+      float: left;
+      min-height: 205px;
+      padding: 20px 15px 20px 20px;
+      position: relative;
+    }
+}
+
+@media(min-width: 769px){
+    .testimonials_slider .item .testi_left {
+      max-width: 570px;
+      display: inline-block;
+      background: #ffcd00;
+      float: left;
+      min-height: 205px;
+      padding: 20px 15px 20px 50px;
+      position: relative;
+    }    
+}
+
 
 .testimonials_slider .item .testi_left:before {
   content: "";
@@ -13966,11 +13991,29 @@ iframe {
   display: inline-block;
   max-width: 160px;
 }
+@media(max-width: 768px){
+    .testimonials_slider .item .testi_right img {
+  max-width: 160px;
+    min-height: 240px;
+  width: auto;
+    }
+}
+@media(max-width: 410px){
+    .testimonials_slider .item .testi_right img {
+  max-width: 160px;
+    min-height: 240px;
+  width: auto;
+    }
+}
 
-.testimonials_slider .item .testi_right img {
-  max-width: 100%;
+@media(min-width: 769px){
+    .testimonials_slider .item .testi_right img {
+  max-width: 160px;
+    max-height: 240px;
   width: auto;
 }
+}
+
 
 .testimonials_slider .owl-dots {
   position: absolute;
@@ -15296,7 +15339,7 @@ iframe {
 /* Work area css
 ============================================================================================ */
 .work_area {
-  background: url(../img/photo-1494972308805-463bc619d34e.jpg) no-repeat scroll center center;
+  background: url(../img/How_to_order.jpg) no-repeat scroll center center;
   background-size: cover;
   position: relative;
   z-index: 2;

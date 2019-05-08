@@ -30,7 +30,29 @@
                     @csrf
                     @method('PUT')
                     <div class="form-group">
+                        <Strong>File</Strong><br>
+                      
                       <!--<input type="file" class="form-control file-input" name="gambar" placeholder="Masukkan gambar">-->
+                      @foreach($media as $media)
+                    <img src="{{asset('project')}}/{{$media->idkonten}}-{{$media->idmedia}}.{{$media->format}}" height="400" weight="400">
+                    <input type="text" name="hide-{{$jumlahgambar = $loop->iteration}}" value="{{$media->idkonten}}-{{$media->idmedia}}" hidden>
+                    <input type="text" name="format-{{$jumlahgambar}}" value="{{$media->format}}" hidden>
+                    <input type="file" class="form-control file-input" name="gambar{{$jumlahgambar}}" placeholder="Masukkan gambar">
+                    @endforeach
+                    <input type="text" name="jumlahmedia" id="jumlahmedia" value="{{$jumlahgambar}}" hidden>
+                    <br><Strong>Link : </Strong><br>
+                    @foreach($link as $link)
+                    
+                    <input type="text" class="form-control file-input" name="link{{$jumlahlink = $loop->iteration}}" value="{{$link->isi}}">
+                    <br>
+                    <input type="text" name="jumlahlink" id="jumlahlink" value="{{$jumlahlink}}" hidden>
+                    
+                    
+                    @endforeach
+                    
+                    
+                    
+                      <div id="link"></div>
                     </div>
                     <div class="form-group">
                     <strong>Judul : </strong>
